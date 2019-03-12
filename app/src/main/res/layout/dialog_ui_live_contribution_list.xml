@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ranklist_more_nsv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/sp_10"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--<ImageView-->
+            <!--android:id="@+id/left_back_iv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:onClick="viewsClick"-->
+            <!--android:padding="@dimen/dp_8"-->
+            <!--android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />-->
+
+            <ImageView
+                android:id="@+id/right_back_iv"
+                android:layout_width="@dimen/dp_36"
+                android:layout_height="@dimen/dp_36"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_16"
+                android:onClick="viewsClick"
+                android:src="@mipmap/icon_live_close" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/ranklist_more_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dp_36"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_36"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:background="@drawable/shape_ranklist_rg_bg"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/ranklist_more_left_rb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_liver_h_ranklist_rg_left"
+                android:button="@null"
+                android:drawableLeft="@drawable/shape_liver_h_ranklist_rg_left_drawable"
+                android:gravity="center"
+                android:text="日贡献榜"
+                android:textColor="@color/color_select_ranklist_rg_tc"
+                android:textSize="@dimen/sp_12" />
+
+            <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/lineColor" />-->
+
+            <RadioButton
+                android:id="@+id/ranklist_more_right_rb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_liver_h_ranklist_rg_right"
+                android:button="@null"
+                android:drawableLeft="@drawable/shape_liver_h_ranklist_rg_right_drawable"
+                android:gravity="center"
+                android:text="周贡献榜"
+                android:textColor="@color/color_select_ranklist_rg_tc"
+                android:textSize="@dimen/sp_12" />
+        </RadioGroup>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/ranklist_more_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_8"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:background="@color/lineColor" />
+
+        <TextView
+            android:id="@+id/ranklist_more_hint_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginBottom="@dimen/dp_24"
+            android:gravity="left"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"
+            tools:text="1.榜单榜单榜单榜单榜单榜单\r\n2.榜单榜单榜单榜单" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

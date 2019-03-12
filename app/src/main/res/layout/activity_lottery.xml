@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FEF7EB"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/title_cuprum_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/title_cuprum_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:drawableLeft="@mipmap/ic_lottery_key_cuprum"
+                android:drawablePadding="@dimen/dp_8"
+                android:gravity="center"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/sp_16"
+                tools:text="x10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_cuprum_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:text="青铜钥匙"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/sp_14" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/title_silver_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/title_silver_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:drawableLeft="@mipmap/ic_lottery_key_silver"
+                android:drawablePadding="@dimen/dp_8"
+                android:gravity="center"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/sp_16"
+                tools:text="x10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_silver_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:text="白银钥匙"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/sp_14" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/title_gold_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/title_gold_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:drawableLeft="@mipmap/ic_lottery_key_gold"
+                android:drawablePadding="@dimen/dp_8"
+                android:gravity="center"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/sp_16"
+                tools:text="x10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_gold_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:text="黄金钥匙"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/sp_14" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_3"
+        android:background="#F3E2C8">
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_circle_00bb56" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_circle_00bb56"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_circle_00bb56"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <com.yunbao.phonelive.ui.widget.NoScrollViewPager
+        android:id="@+id/lottery_content_nsvp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FEEFD8" />
+
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:focusable="false"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@id/live_watcher_chat_ll"
+        android:background="@drawable/shadow_bottom_to_top_e4eaea" />
+
+    <LinearLayout
+        android:id="@+id/live_watcher_chat_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:clickable="false"
+        android:focusable="false"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/live_watcher_chat_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:layout_weight="1"
+            android:background="@drawable/bg_chat_editer"
+            android:hint="快来调侃一下主播吧!"
+            android:imeOptions="flagNoExtractUi"
+            android:maxLength="30"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_16"
+            android:paddingBottom="@dimen/dp_8"
+            android:singleLine="true"
+            android:textColor="@color/footNotHintTextColor"
+            android:textColorHint="@color/footNotHintTextColor"
+            android:textSize="@dimen/sp_12" />
+
+
+        <ImageView
+            android:id="@+id/live_watcher_bucket_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingBottom="@dimen/dp_8"
+            android:src="@mipmap/ic_liver_beer_bucket" />
+
+        <ImageView
+            android:id="@+id/live_watcher_send_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:paddingBottom="@dimen/dp_8"
+            android:src="@mipmap/ic_liver_chat_gift" />
+    </LinearLayout>
+
+
+</LinearLayout>

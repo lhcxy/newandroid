@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <RadioGroup
+        android:id="@+id/rank_list_rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rank_menus"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/pop_live_share_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:button="@null"
+            android:padding="@dimen/dp_16"
+            android:text="周榜"
+            android:textColor="@drawable/rank_type_text_color"
+            android:textSize="@dimen/sp_14" />
+
+        <RadioButton
+            android:id="@+id/pop_live_report_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:button="@null"
+            android:padding="@dimen/dp_16"
+            android:text="月榜"
+            android:textColor="@drawable/rank_type_text_color"
+            android:textSize="@dimen/sp_14" />
+    </RadioGroup>
+</RelativeLayout>

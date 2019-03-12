@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="150dp"
+    android:layout_height="40dp"
+    android:background="@drawable/bg_gift_anim"
+    >
+
+    <ImageView
+        android:id="@+id/uhead"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/uhead"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        />
+
+    <com.yunbao.phonelive.custom.DrawableTextView
+        android:id="@+id/most_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/uname"
+        android:layout_below="@id/uname"
+        android:drawablePadding="2dp"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        app:drawableSize="12dp"
+        app:left_drawable="@mipmap/icon_gift_diamond"
+        />
+
+</RelativeLayout>

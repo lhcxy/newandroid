@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rank_more_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48">
+
+        <ImageView
+            android:id="@+id/rank_more_back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:adjustViewBounds="true"
+            android:onClick="back"
+            android:padding="@dimen/dp_8"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/mainBodyTextColor"
+            android:textSize="@dimen/sp_18"
+            tools:text="sdklfjds" />
+
+        <TextView
+            android:id="@+id/subtitle_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_8"
+            android:drawableRight="@mipmap/ic_arrow_down"
+            android:drawablePadding="@dimen/dp_4"
+            android:padding="@dimen/dp_8"
+            android:text="周榜"
+            android:textColor="@color/app_selected_color"
+            android:textSize="@dimen/sp_12" />
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/rank_more_title_tl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/rank_more_title"
+        android:overScrollMode="never"
+        android:paddingBottom="@dimen/dp_2"
+        android:scrollbars="none"
+        app:tabIndicatorHeight="0dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/rank_more_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rank_more_title_tl"
+        android:overScrollMode="never" />
+
+</RelativeLayout>

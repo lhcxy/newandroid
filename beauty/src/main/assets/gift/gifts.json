@@ -1,0 +1,68 @@
+{
+  "gifts": [
+    {
+      "name": "car",
+      "dir": "car",
+      "category": "default",
+      "thumb": "car_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "villa",
+      "dir": "villa",
+      "category": "default",
+      "thumb": "villa_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "yacht",
+      "dir": "yacht",
+      "category": "default",
+      "thumb": "yacht_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "duke",
+      "dir": "duke",
+      "category": "default",
+      "thumb": "duke_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "earl",
+      "dir": "earl",
+      "category": "default",
+      "thumb": "earl_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "emperor",
+      "dir": "emperor",
+      "category": "default",
+      "thumb": "emperor_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "king",
+      "dir": "king",
+      "category": "default",
+      "thumb": "king_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "viscount",
+      "dir": "viscount",
+      "category": "default",
+      "thumb": "viscount_icon.png",
+      "voiced": false,
+      "downloaded": false
+    }
+  ]
+}

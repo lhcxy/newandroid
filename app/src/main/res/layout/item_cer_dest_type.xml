@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cer_desc_type_tv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_circle"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp_8"
+    android:paddingBottom="@dimen/dp_8"
+    android:text="sdkfj"
+    android:textColor="@color/text_color_4c"
+    android:textSize="@dimen/sp_14" />

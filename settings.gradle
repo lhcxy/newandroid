@@ -1,0 +1,2 @@
+include ':app', ':jpush', ':sharedsdk', ':imlibrary'
+//include ':baselibrary'

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_title"
+        android:id="@+id/mine_package_title_rl"/>
+
+    <LinearLayout
+        android:id="@+id/bind_mobile_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mine_package_title_rl"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/bind_mobile_no_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_16"
+                android:text="手机号码"
+                android:textColor="@color/footNotTextColor"
+                android:textSize="@dimen/sp_16" />
+
+            <EditText
+                android:id="@+id/bind_mobile_no_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_16"
+                android:layout_toRightOf="@id/bind_mobile_no_title"
+                android:background="@null"
+                android:hint="请输入手机号码"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textColor="@color/footNotHintTextColor"
+                android:textColorHint="@color/footNotHintTextColor"
+                android:textSize="@dimen/sp_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/bind_mobile_no_title"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:background="@color/lineColor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/bind_mobile_sms_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_16"
+                android:background="@drawable/bg_full_grey_circle_4"
+                android:paddingLeft="@dimen/dp_8"
+                android:paddingTop="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_8"
+                android:paddingBottom="@dimen/dp_4"
+                android:text="发送验证码"
+                android:textColor="@color/footNotTextColor"
+                android:textSize="@dimen/sp_14" />
+
+
+            <EditText
+                android:id="@+id/bind_mobile_sms_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_16"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:layout_toLeftOf="@id/bind_mobile_sms_Tv"
+                android:background="@null"
+                android:hint="请输入短信验证码"
+                android:singleLine="true"
+                android:textColor="@color/footNotHintTextColor"
+                android:textColorHint="@color/footNotHintTextColor"
+                android:textSize="@dimen/sp_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/bind_mobile_sms_et"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:background="@color/lineColor" />
+        </RelativeLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/bind_mobile_action_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_36"
+            android:layout_marginRight="@dimen/dp_36"
+            android:background="@drawable/bg_circle_ff6490"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingBottom="@dimen/dp_8"
+            android:text="绑定手机"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="5" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bind_success_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mine_package_title_rl"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/empty_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_96"
+            android:src="@mipmap/ic_bind_phone_success" />
+
+        <TextView
+            android:id="@+id/empty_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/empty_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_16"
+            android:text="绑定成功"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+
+</RelativeLayout>

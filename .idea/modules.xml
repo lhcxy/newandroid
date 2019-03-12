@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imlibrary/imlibrary.iml" filepath="$PROJECT_DIR$/imlibrary/imlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jpush/jpush.iml" filepath="$PROJECT_DIR$/jpush/jpush.iml" />
+      <module fileurl="file://$PROJECT_DIR$/newandroid.iml" filepath="$PROJECT_DIR$/newandroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sharedsdk/sharedsdk.iml" filepath="$PROJECT_DIR$/sharedsdk/sharedsdk.iml" />
+    </modules>
+  </component>
+</project>

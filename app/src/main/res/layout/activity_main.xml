@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_alignParentBottom="true">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btn_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/bg_btn_home"
+                android:drawablePadding="@dimen/dp_4"
+                android:gravity="center"
+                android:onClick="mainClick"
+                android:text="首页"
+                android:textColor="@drawable/selector_home_tab_tc"
+                android:textSize="@dimen/sp_12" />
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/btn_near"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1"-->
+                <!--android:button="@null"-->
+                <!--android:drawableTop="@drawable/bg_btn_home_near"-->
+                <!--android:drawablePadding="@dimen/dp_4"-->
+                <!--android:gravity="center"-->
+                <!--android:onClick="mainClick"-->
+                <!--android:text="娱乐"-->
+                <!--android:textColor="@drawable/selector_home_tab_tc"-->
+                <!--android:textSize="@dimen/sp_12"-->
+                <!--android:visibility="gone" />-->
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4" />
+
+            <TextView
+                android:id="@+id/live_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/icon_start_live"
+                android:gravity="center"
+                android:onClick="mainClick"
+                android:text="直播"
+                android:textColor="@drawable/selector_home_tab_tc"
+                android:textSize="@dimen/sp_12" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4" />
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/btn_list"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1"-->
+                <!--android:button="@null"-->
+                <!--android:drawableTop="@drawable/bg_btn_home_order"-->
+                <!--android:drawablePadding="@dimen/dp_4"-->
+                <!--android:gravity="center"-->
+                <!--android:onClick="mainClick"-->
+                <!--android:text="榜单"-->
+                <!--android:textColor="@drawable/selector_home_tab_tc"-->
+                <!--android:textSize="@dimen/sp_12"-->
+                <!--android:visibility="gone" />-->
+
+
+            <RadioButton
+                android:id="@+id/btn_me"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/bg_btn_me"
+                android:drawablePadding="@dimen/dp_4"
+                android:gravity="center"
+                android:onClick="mainClick"
+                android:text="我的"
+                android:textColor="@drawable/selector_home_tab_tc"
+                android:textSize="@dimen/sp_12" />
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/replaced"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom" />
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:layout_above="@id/bottom"-->
+    <!--android:background="@drawable/shadow_bottom_to_top" />-->
+
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/live_btn"-->
+    <!--android:layout_width="@dimen/dp_64"-->
+    <!--android:layout_height="@dimen/dp_64"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:background="@drawable/bg_white_circle"-->
+    <!--android:onClick="mainClick">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:adjustViewBounds="true"-->
+    <!--android:src="@mipmap/icon_start_live" />-->
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

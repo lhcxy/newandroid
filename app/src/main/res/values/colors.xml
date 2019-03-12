@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/app_selected_color</color>
+    <color name="colorPrimaryDark">#808080</color>
+    <color name="colorAccent">@color/app_selected_color</color>
+
+    <!--自定义颜色-->
+    <color name="global">#FBB336</color>
+    <color name="yellow">#FFF000</color>
+    <color name="green">#55cd05</color>
+    <color name="blue">#008dce</color>
+    <color name="background">#F7F7F7</color>
+    <color name="titleBackground">#f1f1f1</color>
+    <color name="textColor">#4D4D4D</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="lineColor">#e0e0e0</color>
+    <color name="mainLineColor">#f5f5f9</color>
+
+
+    <color name="textWhite_ee">#fefefe</color>
+
+
+    <color name="mainBodyTextColor">#333333</color>
+    <color name="subBodyTextColor">#555555</color>
+    <color name="footNotTextColor">#666666</color>
+    <color name="footNotHintTextColor">#737373</color>
+    <color name="footLightGreyTextColor">#E1E1E1</color>
+
+    <!--video player-->
+    <color name="panel_bg_start">#661D1E24</color>
+    <color name="panel_bg_end">#CC1D1E24</color>
+    <color name="panel_bg_middle">#991D1E24</color>
+    <color name="text_color_normal">#FFFFFF</color>
+    <color name="text_color_selected">#FF2E4E</color>
+    <color name="controller_pannel">#5518181D</color>
+    <color name="content_background">#18181d</color>
+    <color name="view_grey_bg">#efefef</color>
+
+
+    <color name="app_selected_color">#00bb56</color>
+    <color name="app_liver_rank_selected_color">#ff6490</color>
+    <color name="app_unselected_bg_color">#ededed</color>
+    <color name="app_beer_bucket_hint_color">#808080</color>
+    <color name="app_beer_bucket_num_hint_color">#4c4c4c</color>
+    <color name="app_beer_bucket_time_hint_color">#a6a6a6</color>
+    <color name="dialog_beer_bucket_title_color">#595959</color>
+
+
+    <color name="view_bg_color">#ebebf2</color>
+    <color name="text_color_333">#333333</color>
+    <color name="text_color_4d">#4d4d4d</color>
+    <color name="text_color_32">#323232</color>
+    <color name="text_color_b2">#b2b2b2</color>
+    <color name="text_color_1a">#1a1a1a</color>
+    <color name="text_color_99">#999999</color>
+    <color name="text_color_66">#666666</color>
+    <color name="text_color_f033">#f03333</color>
+    <color name="text_color_4c">#4c4c4c</color>
+    <color name="text_color_8c">#8c8c8c</color>
+    <color name="text_color_88">#888888</color>
+    <color name="text_color_c2">#c2c2cc</color>
+    <color name="text_color_b3">#b3b3b3</color>
+    <color name="text_color_cc">#cccccc</color>
+    <color name="text_color_aa">#aaaaaa</color>
+    <color name="text_color_fc3c">#FC333C</color>
+    <color name="text_color_dd">#DDDDDD</color>
+    <color name="text_color_f3781">#FF3871</color>
+    <color name="line_color_e5">#e5e5e5</color>
+    <color name="text_color_f7">#f7f7f7</color>
+    <color name="avarat_border_color_c9">#c9c9c9</color>
+
+    <color name="text_rank_list_one">#FDD655</color>
+    <color name="text_rank_list_two">#D4EDFC</color>
+    <color name="text_rank_list_three">#F5D6B8</color>
+    <color name="text_rank_list_other">#898989</color>
+    <color name="text_color_ff326c">#FF326C</color>
+    <color name="text_color_ffe57c">#FFE57C</color>
+    <color name="text_color_5acdee">#5ACDEE</color>
+    <color name="txt_color_0b65">#00bb65</color>
+
+</resources>

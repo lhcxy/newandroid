@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b2000000">
+
+
+    <TextView
+        android:id="@+id/knock_egg_rule_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_24"
+        android:text="查看规则"
+        android:textColor="#ffffffff"
+        android:textSize="14sp" />
+
+
+    <ImageView
+        android:id="@+id/knock_egg_comfirm_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/knock_egg_rule_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_24"
+        android:clickable="true"
+        android:src="@drawable/selector_egg_get_awrad" />
+
+    <TextView
+        android:id="@+id/knock_egg_interval_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/knock_egg_comfirm_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:background="@drawable/bg_circle_b200"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_4"
+        android:paddingRight="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_4"
+        android:text="00:00"
+        android:textColor="#ffffe57c"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/knock_egg_action_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/knock_egg_interval_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:src="@mipmap/ic_egg_level_0" />
+
+
+    <TextView
+        android:id="@+id/knock_egg_level_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/knock_egg_action_iv"
+        android:layout_centerHorizontal="true"
+        android:text="LV.0"
+        android:textColor="#FFE57C"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/knock_egg_hint_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/knock_egg_level_tv"
+        android:layout_marginLeft="@dimen/dp_56"
+        android:layout_marginRight="@dimen/dp_56"
+        android:layout_marginBottom="@dimen/dp_4"
+        android:background="#b2000000"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/dp_4"
+        android:paddingLeft="@dimen/dp_24"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_24"
+        android:paddingBottom="@dimen/dp_12"
+        android:text="暂无收益可领取，赶紧去砸蛋吧"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14" />
+
+    <RelativeLayout
+        android:id="@+id/result_content_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/knock_egg_action_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dp_56"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_56"
+        android:background="@mipmap/bg_knock_egg_result"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/result_close_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dp_16"
+            android:src="@mipmap/ic_knock_egg_result_close" />
+
+        <TextView
+            android:id="@+id/result_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/result_close_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginRight="@dimen/dp_24"
+            android:gravity="center"
+            android:text="确定收获？收获可获得200探球币"
+            android:textColor="#ff555555"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/result_content_tv"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:orientation="horizontal">
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/result_confirm_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/knock_egg_rule_tv"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:src="@drawable/selector_knock_egg_result_confirm" />
+
+
+            <ImageView
+                android:id="@+id/result_cancel_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/knock_egg_rule_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dp_36"
+                android:clickable="true"
+                android:src="@drawable/selector_knock_egg_result_cancel" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/dialog_cancel_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:padding="@dimen/dp_8"
+        android:src="@mipmap/ic_dialog_rp_close" />
+
+</RelativeLayout>

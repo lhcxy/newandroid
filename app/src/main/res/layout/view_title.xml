@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_48"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/mainBodyTextColor"
+        android:textSize="@dimen/sp_18"
+        tools:text="sdklfjds" />
+
+    <ImageView
+        android:id="@+id/title_back_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:adjustViewBounds="true"
+        android:onClick="back"
+        android:padding="@dimen/dp_8"
+        android:src="@mipmap/icon_back" />
+
+    <TextView
+        android:id="@+id/subtitle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|left"
+        android:padding="@dimen/dp_8"
+        android:textColor="@color/text_color_88"
+        android:textSize="@dimen/sp_14"
+        android:visibility="gone"
+        tools:text="充值记录" />
+
+    <ImageView
+        android:id="@+id/subtitle_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_8"
+        android:padding="@dimen/dp_8"
+        android:src="@mipmap/ic_home_title_search"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/title_line_v"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#e0e0e0"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

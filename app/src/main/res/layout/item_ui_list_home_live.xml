@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_8">
+
+
+    <com.yunbao.phonelive.custom.RectangleImageView
+        android:id="@+id/item_live_cover_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@drawable/bg_radius_6_black"
+        android:maxHeight="@dimen/dp_102" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_32"
+        android:layout_alignBottom="@id/item_live_cover_iv"
+        android:background="@drawable/shadow_bottom_to_top_radius">
+
+        <TextView
+            android:id="@+id/item_live_wnum_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/dp_4"
+            android:layout_marginBottom="@dimen/dp_4"
+            android:drawableLeft="@mipmap/ic_home_live_hot"
+            android:textColor="@color/textWhite_ee"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/item_live_uname_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_marginRight="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_4"
+            android:layout_toLeftOf="@id/item_live_wnum_tv"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="1"
+            android:textColor="@color/textWhite_ee"
+            android:textSize="@dimen/sp_12"
+            tools:text="jskldfj" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/is_live_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dp_8"
+        android:background="@drawable/bg_line_pink_circle"
+        android:paddingLeft="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_2"
+        android:paddingRight="@dimen/dp_8"
+        android:paddingBottom="@dimen/dp_2"
+        android:text="直播中"
+        android:textColor="@color/app_selected_color"
+        android:textSize="@dimen/sp_10"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/item_live_rname_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_live_cover_iv"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_8"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/sp_14"
+        tools:text="sdjflkj" />
+</RelativeLayout>

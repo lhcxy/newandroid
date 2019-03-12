@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/dialog_cancel_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_4"
+        android:paddingBottom="@dimen/sp_12"
+        android:src="@mipmap/ic_dialog_rp_close" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_dialog_rp_title_red"
+            android:orientation="horizontal">
+
+            <android.support.v4.widget.Space
+                android:layout_width="30dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/rp_title_kl_ll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp_12"
+                    android:gravity="center"
+                    android:text="口令红包"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16" />
+
+                <View
+                    android:id="@+id/rp_title_kl_v"
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/bg_full_white_circle_6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rp_title_random_ll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp_12"
+                    android:gravity="center"
+                    android:text="随机红包"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16" />
+
+                <View
+                    android:id="@+id/rp_title_random_v"
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/bg_full_white_circle_6"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="30dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_dialog_bottom_rp"
+            android:orientation="vertical">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_marginRight="@dimen/dp_4"
+                android:background="@drawable/bg_dialog_rp_content">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/rp_content_twb_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="220dp"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@drawable/bg_dialog_rp_hint_tv"-->
+                        <!--android:paddingLeft="@dimen/dp_8"-->
+                        <!--android:paddingTop="@dimen/dp_8"-->
+                        <!--android:paddingBottom="@dimen/dp_8"-->
+                        <!--android:text="自定义奖品由主播自行寄送"-->
+                        <!--android:textColor="#ffb3b3b3"-->
+                        <!--android:textSize="12sp" />-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_12"
+                                android:layout_marginTop="@dimen/dp_12"
+                                android:layout_marginBottom="@dimen/dp_12"
+                                android:text="口令"
+                                android:textColor="#ff333333"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/rp_command_tv"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/dp_16"
+                                android:layout_marginRight="@dimen/dp_24"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:hint="最多20个字符"
+                                android:imeOptions="flagNoExtractUi"
+                                android:maxLength="20"
+                                android:singleLine="true"
+                                android:textColor="#787878"
+                                android:textColorHint="#ffd4d4d4"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/dp_6"
+                            android:layout_marginRight="@dimen/dp_6"
+                            android:background="#ffe1e1e1" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_12"
+                                android:layout_marginTop="@dimen/dp_12"
+                                android:layout_marginBottom="@dimen/dp_12"
+                                android:text="时间"
+                                android:textColor="#ff333333"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/rp_time_et"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/dp_16"
+                                android:layout_marginRight="@dimen/dp_24"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:digits="0123456789"
+                                android:hint="分钟(1-60)"
+                                android:imeOptions="flagNoExtractUi"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:singleLine="true"
+                                android:textColor="#787878"
+                                android:textColorHint="#ffd4d4d4"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff7f7f7">
+
+                            <!--<RadioGroup-->
+                            <!--android:id="@+id/dialog_kl_rp_type_rg"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_centerInParent="true"-->
+                            <!--android:layout_marginLeft="@dimen/dp_32"-->
+                            <!--android:layout_marginTop="@dimen/dp_8"-->
+                            <!--android:layout_marginRight="@dimen/dp_32"-->
+                            <!--android:layout_marginBottom="@dimen/dp_8"-->
+                            <!--android:background="@drawable/bg_dialog_rp_type_title"-->
+                            <!--android:orientation="horizontal">-->
+
+                            <!--<RadioButton-->
+                            <!--android:id="@+id/dialog_kl_rp_type_left_rb"-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_margin="1dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:background="@drawable/sl_bg_rp_type_title"-->
+                            <!--android:button="@null"-->
+                            <!--android:gravity="center"-->
+                            <!--android:paddingTop="@dimen/dp_8"-->
+                            <!--android:paddingBottom="@dimen/dp_8"-->
+                            <!--android:text="自定义红包"-->
+                            <!--android:textColor="@color/color_select_rp_type_rw"-->
+                            <!--android:textSize="14sp" />-->
+
+                            <TextView
+                                android:id="@+id/dialog_kl_rp_type_right_rb"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="@dimen/dp_8"
+                                android:layout_marginBottom="@dimen/dp_8"
+                                android:layout_weight="1"
+                                android:checked="true"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/dp_8"
+                                android:paddingBottom="@dimen/dp_8"
+                                android:text="人民币红包"
+                                android:textColor="#FD595A"
+                                android:textSize="14sp" />
+                            <!--</RadioGroup>-->
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_12"
+                                android:layout_marginTop="@dimen/dp_12"
+                                android:layout_marginBottom="@dimen/dp_12"
+                                android:text="红包"
+                                android:textColor="#ff333333"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/rp_title_et"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/dp_16"
+                                android:layout_marginRight="@dimen/dp_16"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:digits="0123456789"
+                                android:hint="人民币"
+                                android:imeOptions="flagNoExtractUi"
+                                android:inputType="number"
+                                android:maxLength="20"
+                                android:singleLine="true"
+                                android:textColor="#787878"
+                                android:textColorHint="#ffd4d4d4"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/rp_title_unit_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="@dimen/dp_16"
+                                android:text="元"
+                                android:textColor="#ff333333"
+                                android:textSize="@dimen/sp_16" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/rp_content_random_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="220dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_12"
+                                android:layout_marginTop="@dimen/dp_12"
+                                android:layout_marginBottom="@dimen/dp_12"
+                                android:layout_weight="1.5"
+                                android:text="总金额"
+                                android:textColor="#ff333333"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/rp_coin_count_et"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/dp_8"
+                                android:layout_marginRight="@dimen/dp_16"
+                                android:layout_weight="4"
+                                android:background="@null"
+                                android:digits="0123456789."
+                                android:hint="总金额人民币数量"
+                                android:imeOptions="flagNoExtractUi"
+                                android:inputType="number"
+                                android:singleLine="true"
+                                android:textColor="#787878"
+                                android:textColorHint="#ffd4d4d4"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="@dimen/dp_16"
+                                android:text="元"
+                                android:textColor="#ff333333"
+                                android:textSize="@dimen/sp_16" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/dp_6"
+                            android:layout_marginRight="@dimen/dp_6"
+                            android:background="#ffe1e1e1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_12"
+                                android:layout_marginTop="@dimen/dp_12"
+                                android:layout_marginBottom="@dimen/dp_12"
+                                android:layout_weight="1.5"
+                                android:text="数量"
+                                android:textColor="#ff333333"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/rp_count_et"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/dp_8"
+                                android:layout_marginRight="@dimen/dp_16"
+                                android:layout_weight="4"
+                                android:background="@null"
+                                android:digits="0123456789"
+                                android:hint="可领取的红包数量"
+                                android:imeOptions="flagNoExtractUi"
+                                android:inputType="number"
+                                android:singleLine="true"
+                                android:textColor="#787878"
+                                android:textColorHint="#ffd4d4d4"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="@dimen/dp_16"
+                                android:text="个"
+                                android:textColor="#ff333333"
+                                android:textSize="@dimen/sp_16" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/dp_24"
+                            android:layout_marginBottom="@dimen/dp_24"
+                            android:src="@mipmap/ic_dialog_random_rp_logo" />
+                    </LinearLayout>
+
+                </FrameLayout>
+            </android.support.v4.widget.NestedScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:orientation="horizontal">
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/rp_commit_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:background="@drawable/bg_dialog_rp_button"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/dp_8"
+                    android:paddingBottom="@dimen/dp_8"
+                    android:text="提交"
+                    android:textColor="#EE3C3C" />
+
+                <TextView
+                    android:id="@+id/rp_reset_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/dp_8"
+                    android:paddingBottom="@dimen/dp_8"
+                    android:text="重置"
+                    android:textColor="#ffffee5b"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_36"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_marginRight="@dimen/dp_36"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="《抽奖互动规范》"
+                    android:textColor="#ffffee5b"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="《抽奖玩法说明》"
+                    android:textColor="#ffffee5b"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunbao.phonelive.custom.DanmuRL xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_rl"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_24"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_36"
+        android:background="@mipmap/bg_gift_danmu_txt"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_36"
+        android:paddingRight="@dimen/dp_40"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12"
+        tools:text="收获10000探球币！福星降" />
+
+    <ImageView
+        android:id="@+id/gift_iv"
+        android:layout_width="@dimen/dp_72"
+        android:layout_height="@dimen/dp_32"
+        android:layout_centerVertical="true"
+        tools:src="@mipmap/ic_gift_danmu_car" />
+
+
+</com.yunbao.phonelive.custom.DanmuRL>

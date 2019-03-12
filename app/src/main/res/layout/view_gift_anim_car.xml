@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_centerVertical="true"
+    >
+
+    <FrameLayout
+        android:id="@+id/car"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        >
+
+        <ImageView
+            android:id="@+id/uhead"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:translationX="50dp"
+            />
+
+        <TextView
+            android:id="@+id/uname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="55dp"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:translationX="50dp"
+            />
+
+        <ImageView
+            android:id="@+id/carImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/bg_gift_car1"
+            android:translationY="20dp"
+            />
+
+    </FrameLayout>
+
+
+</FrameLayout>

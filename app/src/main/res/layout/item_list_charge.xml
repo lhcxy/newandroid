@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="#fff"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        >
+
+        <com.yunbao.phonelive.custom.DrawableTextView
+            android:id="@+id/coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:text="3000"
+            android:textColor="@color/textColor"
+            android:textSize="18sp"
+            app:left_drawable="@mipmap/icon_my_diamond_2"
+            />
+
+        <TextView
+            android:id="@+id/give"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coin"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/textColor"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_charge_money"
+        android:gravity="center"
+        android:padding="1dp"
+        android:text="0.01"
+        android:textColor="@color/global"
+        android:textSize="15sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/lineColor"
+        />
+
+</RelativeLayout>

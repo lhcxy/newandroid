@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="10dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/live_user_close_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dp_8"
+            android:src="@mipmap/icon_close" />
+
+        <ImageView
+            android:id="@+id/live_user_avatar_iv"
+            android:layout_width="@dimen/dp_64"
+            android:layout_height="@dimen/dp_64"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_24"
+            tools:background="#333333" />
+
+        <TextView
+            android:id="@+id/live_user_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/live_user_avatar_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_12"
+            android:textColor="#ff555555"
+            android:textSize="@dimen/sp_14"
+            tools:text="用户sdf名称" />
+
+        <LinearLayout
+            android:id="@+id/live_user_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/live_user_name_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_12"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/live_user_id_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="uid：12345"
+                android:textColor="#ff555555"
+                android:textSize="@dimen/sp_12" />
+
+            <com.yunbao.phonelive.custom.UserLevelView
+                android:id="@+id/live_user_level_ulv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_16" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/live_user_line_v"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/live_user_ll"
+            android:layout_marginTop="@dimen/dp_12"
+            android:background="#ffcccccc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/live_user_line_v"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/live_user_talk_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_12"
+                android:paddingBottom="@dimen/dp_12"
+                android:text="聊天"
+                android:textColor="#ff555555"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:background="#ffcccccc" />
+
+            <TextView
+                android:id="@+id/live_user_black_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_12"
+                android:paddingBottom="@dimen/dp_12"
+                android:text="屏蔽"
+                android:textColor="#ff555555"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

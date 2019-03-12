@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="224dp"
+    android:layout_height="296dp">
+
+    <RelativeLayout
+        android:id="@+id/dialog_rp_root_second_rl"
+        android:layout_width="224dp"
+        android:layout_height="296dp"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/dialog_rp_open_title_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bg_dialog_random_rp_title">
+
+            <TextView
+                android:id="@+id/rp_open_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_24"
+                android:text="恭喜!"
+                android:textColor="#fffff85d"
+                android:textSize="@dimen/sp_22" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rp_open_title_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_marginRight="@dimen/dp_24"
+                android:background="#fffff5d9"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/result_avatar_iv"
+                    android:layout_width="@dimen/dp_44"
+                    android:layout_height="@dimen/dp_44"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_8" />
+
+                <TextView
+                    android:id="@+id/result_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:textColor="#ff333333"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/result_content_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:layout_marginBottom="@dimen/dp_48"
+                    android:textColor="#ffe1310f"
+                    android:textSize="@dimen/sp_14"
+                    tools:text="获得10000个兔尾巴" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/dialog_rp_open_title_rl"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_12"
+            android:src="@mipmap/ic_dialog_rp_open_coin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/ic_dialog_rp_bottom"
+            android:orientation="vertical">
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2" />
+
+            <TextView
+                android:id="@+id/dialog_rp_confirm_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dp_36"
+                android:layout_marginRight="@dimen/dp_36"
+                android:background="@mipmap/bg_dialog_rp_copy_command"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_8"
+                android:paddingBottom="@dimen/dp_12"
+                android:text="确定"
+                android:textColor="#ffe1310f"
+                android:textSize="@dimen/sp_14" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/dialog_cancel_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/dp_8"
+        android:src="@mipmap/ic_dialog_rp_close" />
+</RelativeLayout>

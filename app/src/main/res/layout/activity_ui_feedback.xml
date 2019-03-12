@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_unselected_bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+    <EditText
+        android:id="@+id/feedback_content_et"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="@dimen/dp_16"
+        android:background="@drawable/bg_full_white_square"
+        android:gravity="left|top"
+        android:hint="请留下您的宝贵意见"
+        android:maxLength="500"
+        android:padding="@dimen/dp_8"
+        android:textColor="@color/subBodyTextColor"
+        android:textColorHint="@color/footNotHintTextColor"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/feedback_commit_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:background="@drawable/bg_full_global_circle"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_8"
+        android:paddingBottom="@dimen/dp_8"
+        android:text="提交"
+        android:textColor="@color/mainBodyTextColor"
+        android:textSize="@dimen/sp_14" />
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    android:background="@drawable/bg_live_chat_item"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/dp_4"
+    android:paddingTop="@dimen/dp_4"
+    android:paddingRight="@dimen/dp_4"
+    android:paddingBottom="@dimen/dp_4"
+    android:textColor="#fff"
+    android:textSize="14sp" /><!-- android:lineSpacingExtra="2dp"--><!--android:lineSpacingMultiplier="1.3"-->

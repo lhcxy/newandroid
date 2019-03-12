@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#fff"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="8dp"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/img"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/img"
+            android:textSize="16sp"
+            />
+
+        <com.yunbao.phonelive.custom.DrawableTextView
+            android:id="@+id/most_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/img"
+            android:drawablePadding="3dp"
+            android:textSize="14sp"
+            app:drawableSize="14sp"
+            app:left_drawable="@mipmap/icon_gift_diamond"
+            />
+
+        <TextView
+            android:id="@+id/last_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/most_price"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/global"
+            android:textSize="15sp"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/lineColor"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <com.yunbao.phonelive.custom.DrawableTextView
+            android:id="@+id/coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15sp"
+            android:drawablePadding="3dp"
+            android:textSize="14sp"
+            app:drawableSize="14sp"
+            app:right_drawable="@mipmap/icon_gift_diamond"
+            android:clickable="true"
+            />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/coin"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/icon_arrow_right"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/btn_pay"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_btn_auction_2"
+            android:gravity="center"
+            android:text="@string/pay"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/btn_pay"
+            android:background="@drawable/bg_btn_no_attention"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="#fff"
+            />
+
+
+    </RelativeLayout>
+</LinearLayout>

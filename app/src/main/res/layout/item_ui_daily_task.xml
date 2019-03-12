@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_16"
+    android:layout_marginTop="@dimen/dp_8"
+    android:layout_marginRight="@dimen/dp_16"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/dp_6"
+    app:cardElevation="0dp"
+    app:cardMaxElevation="0dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/daily_task_img_iv"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_16"
+            tools:src="@mipmap/icon_filter_liangli" />
+
+        <TextView
+            android:id="@+id/daily_task_status_tv"
+            android:layout_width="@dimen/dp_64"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_16"
+            android:background="@drawable/bg_circle_line_00bb56"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_6"
+            android:paddingBottom="@dimen/dp_6"
+            android:text="已完成"
+            android:textColor="@color/txt_color_0b65"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/daily_task_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/daily_task_img_iv"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_toLeftOf="@id/daily_task_status_tv"
+            android:layout_toRightOf="@id/daily_task_img_iv"
+            android:singleLine="true"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/sp_14"
+            tools:text="sdfdssdfdssdfdssdfdssdfdssdfds" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/daily_task_img_iv"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginBottom="@dimen/dp_2"
+            android:layout_toLeftOf="@id/daily_task_status_tv"
+            android:layout_toRightOf="@id/daily_task_img_iv"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/subtitle_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#ff888888"
+                android:textSize="12sp"
+                tools:text="奖励：100爆米花" />
+
+            <TextView
+                android:id="@+id/subtitle_cash_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:singleLine="true"
+                android:textColor="@color/txt_color_0b65"
+                android:textSize="12sp"
+                tools:text="+10积分" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

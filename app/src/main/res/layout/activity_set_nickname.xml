@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+
+    <TextView
+        android:id="@+id/user_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_32"
+        android:text="昵称：lailai"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/sp_14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_8"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_8"
+        android:paddingRight="@dimen/dp_8">
+
+        <TextView
+            android:id="@+id/change_name_coin_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="本次修改昵称需花费"
+            android:textColor="@color/text_color_88"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/jump_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableRight="@mipmap/ic_arrow_right_green"
+            android:drawablePadding="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingBottom="@dimen/dp_8"
+            android:text="充值"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:background="@color/white"
+        android:hint="请输入新昵称（5-20位字符）"
+        android:maxLength="20"
+        android:paddingLeft="@dimen/dp_6"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_6"
+        android:paddingBottom="@dimen/dp_12"
+        android:singleLine="true"
+        android:textColor="@color/text_color_333"
+        android:textColorHint="@color/text_color_88"
+        android:textSize="@dimen/sp_14" />
+
+
+    <TextView
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_group"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_24"
+        android:background="@drawable/bg_btn_common"
+        android:gravity="center"
+        android:onClick="setNickNameClick"
+        android:padding="@dimen/dp_12"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/change_name_hint_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_16"
+        android:lineSpacingExtra="@dimen/dp_4"
+        android:textColor="#ff888888"
+        android:textSize="12sp" />
+</LinearLayout>

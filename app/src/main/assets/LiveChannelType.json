@@ -1,0 +1,711 @@
+[
+  {
+  "id": "football",
+  "name": "足球",
+  "smallpic": "http://resource.redirect.kukuplay.com/upload/zq0914-new_xxh.png",
+  "midpic": "http://resource.redirect.kukuplay.com/upload/pcfootball2.png",
+  "logo": "http://img.zhangyu.tv/145273943018121.png",
+  "ads": "",
+  "isshow": false,
+  "typedetails": ["足球", "女足", "中超", "恒大", "熊猫杯", "美洲杯", "萨尔瓦多", "哥斯达黎加", "金杯赛", "足协", "巴甲", "男足"],
+  "matchdetails": ["荷甲", "西甲", "欧冠", "欧联", "青年欧冠", "亚冠", "西甲", "俄超", "俄甲", "中超", "英超", "德甲（官方场次）", "法甲", "意甲", "澳超", "J联赛", "K联赛", "中甲", "中乙", "日乙", "美国大联盟MLS", "五人制足球世界杯", "葡甲", "墨联", "丹超", "德乙", "法乙", "友谊赛", "巴圣联", "比甲", "智利甲", "足协杯", "芬联杯", "瑞典超", "波兰甲", "捷克甲", "瑞典杯", "瑞士超", "瑞士甲", "希腊超", "英联杯", "解放者杯", "中北美冠", "墨西哥杯", "奥地利甲", "俄罗斯杯", "西乙", "苏甲", "苏超", "英甲", "世预赛", "美洲杯", "以超", "意乙", "阿甲", "英乙", "英冠", "土超", "荷乙", "罗甲", "橄榄球", "挪超", "其他直播", "其他录像", "巴甲", "中国第八级别中丙F组", "芬超", "国王杯", "联赛杯", "捷克u21", "欧青赛u21", "欧青赛u20", "欧青赛u19", "足总杯", "联赛杯 ", "德国杯", "意大利杯", "法国杯"],
+  "isForbidMatch": [true, true, true, true, true, false, true, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+  "matchForbidDetail": [{
+    "match": "荷甲",
+    "isForbid": true
+  }, {
+    "match": "西甲",
+    "isForbid": true
+  }, {
+    "match": "欧冠",
+    "isForbid": true
+  }, {
+    "match": "欧联",
+    "isForbid": true
+  }, {
+    "match": "青年欧冠",
+    "isForbid": true
+  }, {
+    "match": "亚冠",
+    "isForbid": false
+  }, {
+    "match": "西甲",
+    "isForbid": true
+  }, {
+    "match": "俄超",
+    "isForbid": false
+  }, {
+    "match": "俄甲",
+    "isForbid": false
+  }, {
+    "match": "中超",
+    "isForbid": true
+  }, {
+    "match": "英超",
+    "isForbid": false
+  }, {
+    "match": "德甲（官方场次）",
+    "isForbid": false
+  }, {
+    "match": "法甲",
+    "isForbid": false
+  }, {
+    "match": "意甲",
+    "isForbid": false
+  }, {
+    "match": "澳超",
+    "isForbid": false
+  }, {
+    "match": "J联赛",
+    "isForbid": false
+  }, {
+    "match": "K联赛",
+    "isForbid": false
+  }, {
+    "match": "中甲",
+    "isForbid": false
+  }, {
+    "match": "中乙",
+    "isForbid": false
+  }, {
+    "match": "日乙",
+    "isForbid": false
+  }, {
+    "match": "美国大联盟MLS",
+    "isForbid": false
+  }, {
+    "match": "五人制足球世界杯",
+    "isForbid": false
+  }, {
+    "match": "葡甲",
+    "isForbid": false
+  }, {
+    "match": "墨联",
+    "isForbid": false
+  }, {
+    "match": "丹超",
+    "isForbid": false
+  }, {
+    "match": "德乙",
+    "isForbid": false
+  }, {
+    "match": "法乙",
+    "isForbid": false
+  }, {
+    "match": "友谊赛",
+    "isForbid": false
+  }, {
+    "match": "巴圣联",
+    "isForbid": false
+  }, {
+    "match": "比甲",
+    "isForbid": false
+  }, {
+    "match": "智利甲",
+    "isForbid": false
+  }, {
+    "match": "足协杯",
+    "isForbid": false
+  }, {
+    "match": "芬联杯",
+    "isForbid": false
+  }, {
+    "match": "瑞典超",
+    "isForbid": false
+  }, {
+    "match": "波兰甲",
+    "isForbid": false
+  }, {
+    "match": "捷克甲",
+    "isForbid": false
+  }, {
+    "match": "瑞典杯",
+    "isForbid": false
+  }, {
+    "match": "瑞士超",
+    "isForbid": false
+  }, {
+    "match": "瑞士甲",
+    "isForbid": false
+  }, {
+    "match": "希腊超",
+    "isForbid": false
+  }, {
+    "match": "英联杯",
+    "isForbid": false
+  }, {
+    "match": "解放者杯",
+    "isForbid": false
+  }, {
+    "match": "中北美冠",
+    "isForbid": false
+  }, {
+    "match": "墨西哥杯",
+    "isForbid": false
+  }, {
+    "match": "奥地利甲",
+    "isForbid": false
+  }, {
+    "match": "俄罗斯杯",
+    "isForbid": false
+  }, {
+    "match": "西乙",
+    "isForbid": false
+  }, {
+    "match": "苏甲",
+    "isForbid": false
+  }, {
+    "match": "苏超",
+    "isForbid": false
+  }, {
+    "match": "英甲",
+    "isForbid": false
+  }, {
+    "match": "世预赛",
+    "isForbid": false
+  }, {
+    "match": "美洲杯",
+    "isForbid": false
+  }, {
+    "match": "以超",
+    "isForbid": false
+  }, {
+    "match": "意乙",
+    "isForbid": false
+  }, {
+    "match": "阿甲",
+    "isForbid": false
+  }, {
+    "match": "英乙",
+    "isForbid": false
+  }, {
+    "match": "英冠",
+    "isForbid": false
+  }, {
+    "match": "土超",
+    "isForbid": false
+  }, {
+    "match": "荷乙",
+    "isForbid": false
+  }, {
+    "match": "罗甲",
+    "isForbid": false
+  }, {
+    "match": "橄榄球",
+    "isForbid": false
+  }, {
+    "match": "挪超",
+    "isForbid": false
+  }, {
+    "match": "其他直播",
+    "isForbid": false
+  }, {
+    "match": "其他录像",
+    "isForbid": false
+  }, {
+    "match": "巴甲",
+    "isForbid": false
+  }, {
+    "match": "中国第八级别中丙F组",
+    "isForbid": false
+  }, {
+    "match": "芬超",
+    "isForbid": false
+  }, {
+    "match": "国王杯",
+    "isForbid": false
+  }, {
+    "match": "联赛杯",
+    "isForbid": false
+  }, {
+    "match": "捷克u21",
+    "isForbid": false
+  }, {
+    "match": "欧青赛u21",
+    "isForbid": false
+  }, {
+    "match": "欧青赛u20",
+    "isForbid": false
+  }, {
+    "match": "欧青赛u19",
+    "isForbid": false
+  }, {
+    "match": "足总杯",
+    "isForbid": false
+  }, {
+    "match": "联赛杯 ",
+    "isForbid": false
+  }, {
+    "match": "德国杯",
+    "isForbid": false
+  }, {
+    "match": "意大利杯",
+    "isForbid": false
+  }, {
+    "match": "法国杯",
+    "isForbid": false
+  }],
+  "newbig": "http://img.zhangyu.tv/14585534566134820.png",
+  "newlogo": "http://img.zhangyu.tv/14585541468013820.png",
+  "newtype": "http://pic.zhangyu.tv/upload/1533470526424511.png"
+}, {
+  "id": "basketball",
+  "name": "篮球",
+  "smallpic": "http://resource.redirect.kukuplay.com/upload/lq0914-new_xxh.png",
+  "midpic": "http://resource.redirect.kukuplay.com/upload/pcbasketball2.png",
+  "logo": "http://img.zhangyu.tv/1452739473895281.png",
+  "ads": "",
+  "isshow": false,
+  "typedetails": ["nba", "篮球", "wnba", "街球", "季后赛", "常规赛", "总决赛", "男篮", "女篮", "灌篮", "扣篮", "全明星"],
+  "matchdetails": ["NBA直播", "NBA本赛季录像（版权原因禁播）", "NBA往年录像", "欧洲篮球冠军联赛", "NBL澳大利亚男子篮球联赛", "澳大利亚女篮职业联赛", "韩国篮球甲级联赛", "韩国女子篮球联赛", "NCAA", "日本篮球联赛", "欧洲篮球联赛", "希腊篮球联赛", "西班牙篮球联赛", "其他直播", "WNBA直播", "录像", "CBA直播（版权原因禁播）", "CBA往年录像"],
+  "isForbidMatch": [true, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false],
+  "matchForbidDetail": [{
+    "match": "NBA直播",
+    "isForbid": true
+  }, {
+    "match": "NBA本赛季录像（版权原因禁播）",
+    "isForbid": false
+  }, {
+    "match": "NBA往年录像",
+    "isForbid": false
+  }, {
+    "match": "欧洲篮球冠军联赛",
+    "isForbid": false
+  }, {
+    "match": "NBL澳大利亚男子篮球联赛",
+    "isForbid": false
+  }, {
+    "match": "澳大利亚女篮职业联赛",
+    "isForbid": false
+  }, {
+    "match": "韩国篮球甲级联赛",
+    "isForbid": false
+  }, {
+    "match": "韩国女子篮球联赛",
+    "isForbid": false
+  }, {
+    "match": "NCAA",
+    "isForbid": false
+  }, {
+    "match": "日本篮球联赛",
+    "isForbid": false
+  }, {
+    "match": "欧洲篮球联赛",
+    "isForbid": false
+  }, {
+    "match": "希腊篮球联赛",
+    "isForbid": false
+  }, {
+    "match": "西班牙篮球联赛",
+    "isForbid": false
+  }, {
+    "match": "其他直播",
+    "isForbid": false
+  }, {
+    "match": "WNBA直播",
+    "isForbid": true
+  }, {
+    "match": "录像",
+    "isForbid": false
+  }, {
+    "match": "CBA直播（版权原因禁播）",
+    "isForbid": false
+  }, {
+    "match": "CBA往年录像",
+    "isForbid": false
+  }],
+  "newbig": "http://img.zhangyu.tv/1458553453509516.png",
+  "newlogo": "http://img.zhangyu.tv/1458554145545616.png",
+  "newtype": "http://pic.zhangyu.tv/upload/1533470584636471.png"
+}, {
+  "id": "popular",
+  "name": "电竞",
+  "smallpic": "http://resource.redirect.kukuplay.com/upload/mj0914-new_xxh.png",
+  "midpic": "http://fengyun-bar.b0.upaiyun.com/1446106430256181.png",
+  "logo": "http://img.zhangyu.tv/145283349218121.png",
+  "ads": "",
+  "isshow": false,
+  "typedetails": [""],
+  "matchdetails": ["直播", "其他"],
+  "isForbidMatch": [false, false],
+  "matchForbidDetail": [{
+    "match": "直播",
+    "isForbid": false
+  }, {
+    "match": "其他",
+    "isForbid": false
+  }],
+  "newbig": "http://img.zhangyu.tv/1492689494981441.png",
+  "newlogo": "http://img.zhangyu.tv/14585541466109118.png",
+  "newtype": "http://pic.zhangyu.tv/upload/1533470652033891.png"
+}, {
+  "id": "talk",
+  "name": "娱乐",
+  "smallpic": "http://resource.redirect.kukuplay.com/upload/lt0914-new_h.png",
+  "midpic": "http://img.zhangyu.tv/1446106357440221.png",
+  "logo": "http://img.zhangyu.tv/1452833379357751.png",
+  "ads": "",
+  "isshow": false,
+  "typedetails": [""],
+  "matchdetails": ["直播", "其他"],
+  "isForbidMatch": [false, false],
+  "matchForbidDetail": [{
+    "match": "直播",
+    "isForbid": false
+  }, {
+    "match": "其他",
+    "isForbid": false
+  }],
+  "newbig": "http://img.zhangyu.tv/1458617763362421.png",
+  "newlogo": "http://img.zhangyu.tv/1458554145624367.png",
+  "newtype": "http://pic.zhangyu.tv/upload/1533470696595191.png"
+}, {
+  "id": "billiards",
+  "name": "台球",
+  "smallpic": "http://resource.redirect.kukuplay.com/upload/tq0914-new_xxh.png",
+  "midpic": "http://resource.redirect.kukuplay.com/upload/pcbilliards.png",
+  "logo": "http://img.zhangyu.tv/145273940001231.png",
+  "ads": "",
+  "isshow": false,
+  "typedetails": ["中八", "八球", "台球", "斯诺克", "丁俊晖", "九球", "乔氏杯", "中网"],
+  "matchdetails": ["2017中式台球世锦赛", "直布罗陀公开赛", "其他录像", "其他直播", "中国台球超级联赛", "保罗亨特精英赛", "鲁尔公开赛", "保加利亚公开赛", "爱尔兰公开赛", "LCBA来力球王争霸赛", "德国大师赛", "格丁尼亚公开赛", "直布罗陀公开赛", "球员锦标赛（PTC总决赛））", "里加公开赛", "6红球锦标赛", "斯诺克欧洲大师赛", "2016世界斯诺克国际锦标赛（大庆）", "斯诺克中国锦标赛", "2016北爱尔兰斯诺克公开赛", "斯诺克英国锦标赛", "2016斯诺克德国大师赛", "斯诺克苏格兰公开赛", "乔氏中式八球波茨挑战赛", "威尔士公开赛", "冠军联赛"],
+  "isForbidMatch": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+  "matchForbidDetail": [{
+    "match": "2017中式台球世锦赛",
+    "isForbid": false
+  }, {
+    "match": "直布罗陀公开赛",
+    "isForbid": false
+  }, {
+    "match": "其他录像",
+    "isForbid": false
+  }, {
+    "match": "其他直播",
+    "isForbid": false
+  }, {
+    "match": "中国台球超级联赛",
+    "isForbid": false
+  }, {
+    "match": "保罗亨特精英赛",
+    "isForbid": false
+  }, {
+    "match": "鲁尔公开赛",
+    "isForbid": false
+  }, {
+    "match": "保加利亚公开赛",
+    "isForbid": false
+  }, {
+    "match": "爱尔兰公开赛",
+    "isForbid": false
+  }, {
+    "match": "LCBA来力球王争霸赛",
+    "isForbid": false
+  }, {
+    "match": "德国大师赛",
+    "isForbid": false
+  }, {
+    "match": "格丁尼亚公开赛",
+    "isForbid": false
+  }, {
+    "match": "直布罗陀公开赛",
+    "isForbid": false
+  }, {
+    "match": "球员锦标赛（PTC总决赛））",
+    "isForbid": false
+  }, {
+    "match": "里加公开赛",
+    "isForbid": false
+  }, {
+    "match": "6红球锦标赛",
+    "isForbid": false
+  }, {
+    "match": "斯诺克欧洲大师赛",
+    "isForbid": false
+  }, {
+    "match": "2016世界斯诺克国际锦标赛（大庆）",
+    "isForbid": false
+  }, {
+    "match": "斯诺克中国锦标赛",
+    "isForbid": false
+  }, {
+    "match": "2016北爱尔兰斯诺克公开赛",
+    "isForbid": false
+  }, {
+    "match": "斯诺克英国锦标赛",
+    "isForbid": false
+  }, {
+    "match": "2016斯诺克德国大师赛",
+    "isForbid": false
+  }, {
+    "match": "斯诺克苏格兰公开赛",
+    "isForbid": false
+  }, {
+    "match": "乔氏中式八球波茨挑战赛",
+    "isForbid": false
+  }, {
+    "match": "威尔士公开赛",
+    "isForbid": false
+  }, {
+    "match": "冠军联赛",
+    "isForbid": false
+  }],
+  "newbig": "http://img.zhangyu.tv/1464084157064621.png",
+  "newlogo": "http://img.zhangyu.tv/14585541462166314.png",
+  "newtype": "http://pic.zhangyu.tv/upload/1533470721004781.png"
+}, {
+  "id": "badminton",
+  "name": "羽球",
+  "smallpic": "http://resource.redirect.kukuplay.com/upload/ymq0914-new_xxh.png",
+  "midpic": "http://resource.redirect.kukuplay.com/upload/pcbadminton.png",
+  "logo": "http://img.zhangyu.tv/1452739309926271.png",
+  "ads": "",
+  "isshow": false,
+  "typedetails": ["羽毛", "badminton", "苏迪曼", "羽星"],
+  "matchdetails": ["羽球直播", "羽球录像", "羽球户外"],
+  "isForbidMatch": [false, false, false],
+  "matchForbidDetail": [{
+    "match": "羽球直播",
+    "isForbid": false
+  }, {
+    "match": "羽球录像",
+    "isForbid": false
+  }, {
+    "match": "羽球户外",
+    "isForbid": false
+  }],
+  "newbig": "http://img.zhangyu.tv/14585534564801219.png",
+  "newlogo": "http://img.zhangyu.tv/14585541467027019.png",
+  "newtype": "http://pic.zhangyu.tv/upload/15334707417321001.png"
+}, {
+  "id": "volleyball",
+  "name": "排球",
+  "smallpic": "http://resource.redirect.kukuplay.com/upload/pq0914-new_xxh.png",
+  "midpic": "http://resource.redirect.kukuplay.com/upload/pcvolleyball.png ",
+  "logo": "http://img.zhangyu.tv/1452833303819681.png",
+  "ads": "",
+  "isshow": false,
+  "typedetails": ["排球", "女排", "男排"],
+  "matchdetails": ["女排录像", "男排录像", "沙排录像", "排球直播", "排球户外"],
+  "isForbidMatch": [false, false, false, false, false],
+  "matchForbidDetail": [{
+    "match": "女排录像",
+    "isForbid": false
+  }, {
+    "match": "男排录像",
+    "isForbid": false
+  }, {
+    "match": "沙排录像",
+    "isForbid": false
+  }, {
+    "match": "排球直播",
+    "isForbid": false
+  }, {
+    "match": "排球户外",
+    "isForbid": false
+  }],
+  "newbig": "http://img.zhangyu.tv/1458553453716238.png",
+  "newlogo": "http://img.zhangyu.tv/1458554145700988.png",
+  "newtype": "http://pic.zhangyu.tv/upload/1533470994418611.png"
+}, {
+  "id": "tennis",
+  "name": "网球",
+  "smallpic": "http://resource.redirect.kukuplay.com/upload/wq0914-new_xxh.png",
+  "midpic": "http://resource.redirect.kukuplay.com/upload/pctennis.png",
+  "logo": "http://img.zhangyu.tv/1452739594175281.png",
+  "ads": "",
+  "isshow": false,
+  "typedetails": ["网球", "澳网", "温网", "法网", "美网", "ATP", "WTA", "费德勒"],
+  "matchdetails": ["ATP 录像", "WTA 录像", "禁止直播！"],
+  "isForbidMatch": [false, false, true],
+  "matchForbidDetail": [{
+    "match": "ATP 录像",
+    "isForbid": false
+  }, {
+    "match": "WTA 录像",
+    "isForbid": false
+  }, {
+    "match": "禁止直播！",
+    "isForbid": true
+  }],
+  "newbig": "http://img.zhangyu.tv/14585534558955615.png",
+  "newlogo": "http://img.zhangyu.tv/14585541463081715.png",
+  "newtype": "http://pic.zhangyu.tv/upload/1533471017122701.png"
+}, {
+  "id": "outdoors",
+  "name": "户外",
+  "smallpic": "http://resource.redirect.kukuplay.com/upload/hw0914-new_xxh.png",
+  "midpic": "http://img.zhangyu.tv/1448599372874321.png",
+  "logo": "http://img.zhangyu.tv/145283336704581.png",
+  "ads": "",
+  "isshow": false,
+  "typedetails": [""],
+  "matchdetails": ["美食", "打野", "其他"],
+  "isForbidMatch": [false, false, false],
+  "matchForbidDetail": [{
+    "match": "美食",
+    "isForbid": false
+  }, {
+    "match": "打野",
+    "isForbid": false
+  }, {
+    "match": "其他",
+    "isForbid": false
+  }],
+  "newbig": "http://img.zhangyu.tv/1458553453223413.png",
+  "newlogo": "http://img.zhangyu.tv/1458554145274893.png",
+  "newtype": "http://pic.zhangyu.tv/upload/153347106664491.png"
+}, {
+  "id": "boardgame",
+  "name": "棋牌",
+  "smallpic": "http://resource.redirect.kukuplay.com/upload/qp0914-new_xxh.png",
+  "midpic": "http://img.zhangyu.tv/1448599429313121.png",
+  "logo": "http://img.zhangyu.tv/1452833353896931.png",
+  "ads": "",
+  "isshow": false,
+  "typedetails": [""],
+  "matchdetails": ["象棋", "围棋", "麻将", "三国杀＆英雄杀", "德州扑克", "军棋", "其它直播", "录像", "斗地主", "星杯传说"],
+  "isForbidMatch": [false, false, false, false, false, false, false, false, false, false],
+  "matchForbidDetail": [{
+    "match": "象棋",
+    "isForbid": false
+  }, {
+    "match": "围棋",
+    "isForbid": false
+  }, {
+    "match": "麻将",
+    "isForbid": false
+  }, {
+    "match": "三国杀＆英雄杀",
+    "isForbid": false
+  }, {
+    "match": "德州扑克",
+    "isForbid": false
+  }, {
+    "match": "军棋",
+    "isForbid": false
+  }, {
+    "match": "其它直播",
+    "isForbid": false
+  }, {
+    "match": "录像",
+    "isForbid": false
+  }, {
+    "match": "斗地主",
+    "isForbid": false
+  }, {
+    "match": "星杯传说",
+    "isForbid": false
+  }],
+  "newbig": "http://img.zhangyu.tv/14585534542574511.png",
+  "newlogo": "http://img.zhangyu.tv/14585541459629011.png",
+  "newtype": "http://pic.zhangyu.tv/upload/1533471088387871.png"
+}, {
+  "id": "baseball",
+  "name": "棒球",
+  "smallpic": "http://resource.redirect.kukuplay.com/upload/bq0914-new_xxh.png",
+  "midpic": "http://img.zhangyu.tv/1488795026246701.png",
+  "logo": "http://img.zhangyu.tv/148879506506671.png",
+  "ads": "",
+  "isshow": false,
+  "typedetails": [""],
+  "matchdetails": ["MLB美职棒", "NPB日职棒", "KBO韩职棒", "CPBL中华职棒", "甲子园"],
+  "isForbidMatch": [false, false, false, false, false],
+  "matchForbidDetail": [{
+    "match": "MLB美职棒",
+    "isForbid": false
+  }, {
+    "match": "NPB日职棒",
+    "isForbid": false
+  }, {
+    "match": "KBO韩职棒",
+    "isForbid": false
+  }, {
+    "match": "CPBL中华职棒",
+    "isForbid": false
+  }, {
+    "match": "甲子园",
+    "isForbid": false
+  }],
+  "newbig": "http://img.zhangyu.tv/148879508519551.png",
+  "newlogo": "http://img.zhangyu.tv/14585541458833110.png",
+  "newtype": "http://pic.zhangyu.tv/upload/1533471110983421.png"
+}, {
+  "id": "pingpong",
+  "name": "乒乓",
+  "smallpic": "http://resource.redirect.kukuplay.com/upload/pp0914-new_xxh.png",
+  "midpic": "http://resource.redirect.kukuplay.com/upload/pcpingpang2.png",
+  "logo": "http://img.zhangyu.tv/1452739507919761.png",
+  "ads": "",
+  "isshow": false,
+  "typedetails": ["乒"],
+  "matchdetails": ["乒乓直播", "乒乓录像", "乒乓户外"],
+  "isForbidMatch": [false, false, false],
+  "matchForbidDetail": [{
+    "match": "乒乓直播",
+    "isForbid": false
+  }, {
+    "match": "乒乓录像",
+    "isForbid": false
+  }, {
+    "match": "乒乓户外",
+    "isForbid": false
+  }],
+  "newbig": "http://img.zhangyu.tv/1458553453806539.png",
+  "newlogo": "http://img.zhangyu.tv/1458554145797289.png",
+  "newtype": "http://pic.zhangyu.tv/upload/1533471135930621.png"
+}, {
+  "id": "others",
+  "name": "综合",
+  "smallpic": "http://resource.redirect.kukuplay.com/upload/zh0914-new_xxh.png",
+  "midpic": "http://resource.redirect.kukuplay.com/upload/pcother.png",
+  "logo": "http://img.zhangyu.tv/145273962847091.png",
+  "ads": "",
+  "isshow": false,
+  "typedetails": ["健身", "其他"],
+  "matchdetails": ["直播", "录像", "极限", "赛车", "棒球", "冰雪"],
+  "isForbidMatch": [false, false, false, false, false, false],
+  "matchForbidDetail": [{
+    "match": "直播",
+    "isForbid": false
+  }, {
+    "match": "录像",
+    "isForbid": false
+  }, {
+    "match": "极限",
+    "isForbid": false
+  }, {
+    "match": "赛车",
+    "isForbid": false
+  }, {
+    "match": "棒球",
+    "isForbid": false
+  }, {
+    "match": "冰雪",
+    "isForbid": false
+  }],
+  "newbig": "http://img.zhangyu.tv/1458617789313541.png",
+  "newlogo": "http://img.zhangyu.tv/14585541458833110.png",
+  "newtype": "http://pic.zhangyu.tv/upload/1533471165911471.png"
+}, {
+  "id": "wealth",
+  "name": "彩经",
+  "smallpic": "http://resource.redirect.kukuplay.com/upload/cf0914-new_xxh.png",
+  "midpic": "http://img.zhangyu.tv/1470713380322881.png",
+  "logo": "http://img.zhangyu.tv/1470713380322881.png",
+  "ads": "",
+  "isshow": false,
+  "typedetails": [""],
+  "matchdetails": ["直播", "其他"],
+  "isForbidMatch": [false, false],
+  "matchForbidDetail": [{
+    "match": "直播",
+    "isForbid": false
+  }, {
+    "match": "其他",
+    "isForbid": false
+  }],
+  "newbig": "http://img.zhangyu.tv/1470631899618591.jpg",
+  "newlogo": "http://img.zhangyu.tv/1470652449707891.png",
+  "newtype": "http://pic.zhangyu.tv/upload/1533471192579621.png"
+}
+]

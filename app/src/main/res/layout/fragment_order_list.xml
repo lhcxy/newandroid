@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#fff"
+              android:orientation="vertical"
+    >
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_list"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        >
+
+        <RadioButton
+            android:id="@+id/btn_list_day"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_list_2"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/list_day"
+            android:textColor="@color/fg_list"
+            android:textSize="13sp"
+            />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            />
+
+        <RadioButton
+            android:id="@+id/btn_list_week"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_list_2"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/list_week"
+            android:textColor="@color/fg_list"
+            android:textSize="13sp"
+            />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            />
+
+        <RadioButton
+            android:id="@+id/btn_list_month"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_list_2"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/list_month"
+            android:textColor="@color/fg_list"
+            android:textSize="13sp"
+            />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            />
+
+        <RadioButton
+            android:id="@+id/btn_list_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_list_2"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/list_all"
+            android:textColor="@color/fg_list"
+            android:textSize="13sp"
+            />
+    </RadioGroup>
+
+    <com.yunbao.phonelive.custom.RefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:loadStyle="white"
+        app:loadMoreEnable="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/no_zhubo"
+                layout="@layout/view_home_no_data"
+                android:visibility="gone"
+                />
+
+            <include
+                android:id="@+id/load_failure"
+                layout="@layout/view_home_load_failure"
+                android:visibility="gone"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+    </com.yunbao.phonelive.custom.RefreshLayout>
+</LinearLayout>

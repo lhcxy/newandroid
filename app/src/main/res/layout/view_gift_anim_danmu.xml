@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/uhead"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_filter_liangli"
+        android:visibility="gone"
+        app:riv_border_color="@color/white"
+        app:riv_border_width="1dp"
+        app:riv_oval="true" />
+
+    <TextView
+        android:id="@+id/uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_toRightOf="@id/uhead"
+        android:visibility="gone"
+        android:text="sjdlfjsd"
+        android:textColor="#fff"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uname"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_2"
+        android:layout_toRightOf="@id/uhead"
+        android:gravity="center_vertical"
+        android:minWidth="80dp"
+        android:paddingLeft="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_2"
+        android:paddingRight="@dimen/dp_8"
+        android:paddingBottom="@dimen/dp_2"
+        android:shadowColor="#44000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:singleLine="true"
+        tools:text="sjdlfkjsdlkfj"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+</RelativeLayout>

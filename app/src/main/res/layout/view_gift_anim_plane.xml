@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="400dp"
+             android:layout_marginTop="70dp"
+    >
+
+    <FrameLayout
+        android:id="@+id/plane"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/uhead"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="80dp"
+            />
+
+        <TextView
+            android:id="@+id/uname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/uhead"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="65dp"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/bg_gift_plane"
+            />
+        <ImageView
+            android:layout_width="230dp"
+            android:adjustViewBounds="true"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/bg_gift_plane_shadow"
+            android:layout_marginTop="120dp"
+
+            />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/flower1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="❀"
+        android:textColor="#ff66ff"
+        android:textSize="50sp"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/flower2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="❀"
+        android:textColor="#ff3333"
+        android:textSize="50sp"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/flower3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="❀"
+        android:textColor="#EEEE00"
+        android:textSize="50sp"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/flower4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="❀"
+        android:textColor="#7B68EE"
+        android:textSize="50sp"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/flower5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="❀"
+        android:textColor="#4EEE94"
+        android:textSize="50sp"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/flower6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="❀"
+        android:textColor="#9966ff"
+        android:textSize="50sp"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/flower7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="❀"
+        android:textColor="#FF8C69"
+        android:textSize="50sp"
+        android:visibility="invisible"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/flower8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="❀"
+        android:textColor="#6fa8dc"
+        android:textSize="50sp"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/flower9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="❀"
+        android:textColor="#CD661D"
+        android:textSize="50sp"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/flower0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="❀"
+        android:textColor="#EE0000"
+        android:textSize="50sp"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        />
+
+
+</FrameLayout>

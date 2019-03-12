@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/live_chat_root_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/live_chat_hlb_rl"-->
+    <!--android:layout_width="@dimen/dp_40"-->
+    <!--android:layout_height="@dimen/dp_40"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginLeft="@dimen/dp_16"-->
+    <!--android:layout_marginRight="@dimen/dp_16"-->
+    <!--android:layout_marginBottom="@dimen/dp_16"-->
+    <!--android:background="@mipmap/ic_live_free_gift_hlb">-->
+
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/live_chat_hlb_iv"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:src="@mipmap/icon_my_diamond" />&ndash;&gt;-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/live_chat_hlb_num_tv"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:background="@drawable/bg_full_red_circle"-->
+    <!--android:paddingLeft="@dimen/dp_4"-->
+    <!--android:paddingTop="@dimen/dp_2"-->
+    <!--android:paddingRight="@dimen/dp_4"-->
+    <!--android:paddingBottom="@dimen/dp_2"-->
+    <!--android:text="0"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/sp_10"-->
+    <!--android:visibility="invisible" />-->
+    <!--</RelativeLayout>-->
+
+    <ImageView
+        android:id="@+id/live_chat_egg_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:src="@mipmap/ic_live_egg_event" />
+
+
+    <RelativeLayout
+        android:id="@+id/chat_danmu_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFE1AC"
+        android:visibility="visible" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/live_chat_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/chat_danmu_rl"
+        android:layout_toLeftOf="@id/live_chat_egg_iv"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/live_beer_thank_hb_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/dp_16"
+        android:drawableTop="@mipmap/ic_live_beer_thank"
+        android:drawablePadding="@dimen/dp_8"
+        android:shadowColor="#99000000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="2"
+        android:text="红包"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14"
+        android:visibility="invisible" />
+
+</RelativeLayout>

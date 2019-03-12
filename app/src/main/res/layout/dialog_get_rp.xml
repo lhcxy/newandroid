@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/rp_root_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_command_rp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_get_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_16"
+            android:text="100元人民币支付宝打款"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/dialog_get_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:text="04:59"
+            android:textColor="#ffba291c"
+            android:textSize="@dimen/sp_12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginRight="@dimen/dp_24"
+            android:background="@drawable/bg_dialog_rp_get_center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:gravity="center"
+                android:text="抽奖条件：关注主播\n并发送下方口令即可参加抽奖"
+                android:textColor="#ffffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/dialog_get_command_desc_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:background="@drawable/bg_circle_fbda30"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingTop="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_16"
+                android:paddingBottom="@dimen/dp_4"
+                android:text="中国队加油！"
+                android:textColor="#ff2c2c2c"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dialog_get_commit_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@mipmap/bg_dialog_rp_copy_command"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_4"
+            android:text="复制口令"
+            android:textColor="#ffe02e18"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#ffdf3121" />
+
+        <LinearLayout
+            android:id="@+id/dialog_get_follow_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_8"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="您未关注主播，无法参与抽奖"
+                android:textColor="#ffffffff"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/dialog_get_follow_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:background="@mipmap/bg_dialog_rp_follow"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_2"
+                android:text="关注"
+                android:textColor="#ffc92c1e"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dialog_cancel_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/rp_root_ll"
+        android:layout_marginRight="@dimen/dp_12"
+        android:padding="@dimen/dp_8"
+        android:src="@mipmap/ic_dialog_rp_close" />
+</RelativeLayout>

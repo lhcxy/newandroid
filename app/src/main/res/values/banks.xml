@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="banks_name">
+        <item>光大银行</item>
+        <item>兴业银行</item>
+        <item>农业银行</item>
+        <item>广发银行</item>
+        <item>浦发银行</item>
+        <item>建设银行</item>
+        <item>杭州银行</item>
+        <item>重庆银行</item>
+        <item>宁波银行</item>
+        <item>平安银行</item>
+        <item>工商银行</item>
+        <item>交通银行</item>
+        <item>招商银行</item>
+        <item>中国银行</item>
+        <item>莱商银行</item>
+        <item>上海银行</item>
+        <item>江苏银行</item>
+        <item>华夏银行</item>
+        <item>德州银行</item>
+        <item>中信银行</item>
+        <item>民生银行</item>
+        <item>邮政储蓄银行</item>
+        <item>广州银行</item>
+        <item>北京银行</item>
+        <item>临商银行</item>
+    </string-array>
+</resources>

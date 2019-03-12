@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wrap"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_16">
+
+
+    <ImageView
+        android:id="@+id/mine_gift_icon"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_48"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_16"
+        android:adjustViewBounds="true"
+        tools:src="@mipmap/icon_filter_liangli" />
+
+    <TextView
+        android:id="@+id/mine_gift_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mine_gift_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_4"
+        android:textColor="@color/footNotHintTextColor"
+        android:textSize="@dimen/sp_10"
+        tools:text="sjldkfj" />
+
+    <TextView
+        android:id="@+id/mine_gift_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mine_gift_count"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_4"
+        android:layout_marginTop="@dimen/dp_4"
+        android:textColor="@color/global"
+        android:textSize="12sp"
+        tools:text="jsldkfj" />
+
+
+</RelativeLayout>

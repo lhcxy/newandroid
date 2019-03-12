@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yunbao.phonelive">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.NETWORK_PROVIDER" />
+    <!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- Required -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAG" />
+
+    <application
+        android:name="AppContext"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.LauncherActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="app"
+                    android:scheme="tanqiu" />
+                <!-- com.baidu.tieba://app/live?roomId=   -->
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.LoginActivityEx"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FindPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.WebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WebBannerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.views.viewholder.ChatRoomSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WebAuthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WebFenXiaoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EMChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.UserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AttentionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunbao.phonelive.activity.EMChatRoomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LiveRecordListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SetAvatarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SetSexActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SetNickNameActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.views.LotteryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.views.LotteryHistoryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ResetPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.views.LiveReportActivity"
+            android:screenOrientation="portrait" />
+        <!--<activity-->
+        <!--android:name=".activity.LiveAnchorActivity"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@style/TranslucentTheme"-->
+        <!--android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />-->
+        <activity
+            android:name=".activity.LiveAudienceActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentTheme"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".activity.ShopActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EquipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LiveReadyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name=".activity.ChargeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.views.LotteryRuleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HarvestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginInvalidActivity"
+            android:theme="@style/dialog2" />
+        <activity
+            android:name=".activity.RecommendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LiveRecordPlayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.views.AnchorCertificateActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.views.LiveCameraActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RiseAnimation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!--<activity-->
+            <!--android:name=".activity.LiveAnchorActivity"-->
+            <!--android:configChanges="orientation|keyboardHidden|screenSize"-->
+            <!--android:launchMode="singleTop"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/Theme.RiseAnimation"-->
+            <!--android:windowSoftInputMode="stateHidden|adjustPan" />-->
+
+        <!--<activity-->
+        <!--android:name=".activity.LiveAnchorActivity"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@style/TranslucentTheme"-->
+        <!--android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />-->
+        <activity
+            android:name=".ui.views.LiveWatcherActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RiseAnimation"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.LiveAnchorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RiseAnimation"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.LiveAnchorHorizontalActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RiseAnimation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!--new views-->
+        <activity
+            android:name=".ui.views.RankMoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.views.TabEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.views.ClassifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.views.MinePackageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.views.ChangeMobileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.views.HistoryPackageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.views.ChargeHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.views.BindMobileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.views.BindWechatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.views.ChoseCountryCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.views.DailyTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.views.FeedBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.views.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.views.CommonSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.views.HarvestHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.views.MsgCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.views.MsgSearchActivity"
+            android:screenOrientation="portrait" />
+        <!--<activity-->
+        <!--android:name=".ui.views.PreLiveReadyActivity"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@style/TranslucentTheme" />-->
+        <!--监听网络变化的广播-->
+        <receiver android:name=".receiver.ConnectivityReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 环信 -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="advance1989#demoynbao" />
+
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true" />
+        <service
+            android:name="com.hyphenate.chat.EMJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <!-- 环信 end-->
+
+        <!--微信登录回调页面-->
+        <activity
+            android:name="com.yunbao.phonelive.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="cm.aiyouxi.live.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="cm.aiyouxi.live.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--微信登录回调页面 end-->
+
+        <!--微信支付回调页面-->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--微信支付回调页面-->
+
+        <!--极光推送-->
+        <receiver
+            android:name=".receiver.JPushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+
+                <category android:name="cm.aiyouxi.live" />
+            </intent-filter>
+        </receiver>
+        <!--极光推送 end-->
+
+        <!--支付宝-->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+
+        <!--支付宝 end-->
+
+        <!--高德定位-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="2ec444fa426098bb1b8e5fc83dd2311e" />
+        <!-- 定位需要的服务 -->
+        <!--<service android:name="com.amap.api.location.APSService" />-->
+        <!--高德定位 end-->
+
+        <!-- 腾讯bugly -->
+        <meta-data
+            android:name="BUGLY_APPID"
+            android:value="bc44ede077" />
+        <!-- 配置APP版本号 -->
+        <meta-data
+            android:name="BUGLY_APP_VERSION"
+            android:value="1.2.9" />
+
+        <!-- 配置APP渠道号 -->
+        <meta-data
+            android:name="BUGLY_APP_CHANNEL"
+            android:value="debug" />
+
+        <!-- 配置Bugly调试模式（true或者false） -->
+        <meta-data
+            android:name="BUGLY_ENABLE_DEBUG"
+            android:value="false" />
+        <!-- 腾讯bugly -->
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="cm.aiyouxi.live.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <!--<provider-->
+        <!--android:name="android.support.v4.content.FileProvider"-->
+        <!--android:authorities="${applicationId}.fileProvider"-->
+        <!--android:exported="false"-->
+        <!--android:grantUriPermissions="true">-->
+        <!--<meta-data-->
+        <!--android:name="android.support.FILE_PROVIDER_PATHS"-->
+        <!--android:resource="@xml/provider_paths"/>-->
+        <!--</provider>-->
+    </application>
+    <!--<supports-screens-->
+    <!--android:anyDensity="true"-->
+    <!--android:largeScreens="true"-->
+    <!--android:normalScreens="true"-->
+    <!--android:resizeable="true"-->
+    <!--android:smallScreens="true" />-->
+</manifest>

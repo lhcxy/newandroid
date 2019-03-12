@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+
+    <RelativeLayout
+        android:id="@+id/common_setting_only_wifi_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_16"
+            android:text="仅在wifi网络下观看"
+            android:textColor="@color/mainBodyTextColor" />
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/common_setting_only_wifi_cb"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="@dimen/dp_16"-->
+            <!--android:focusable="false"-->
+            <!--android:visibility="gone" />-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_16"
+            android:background="@drawable/bg_line_4_b8b8">
+
+            <ImageView
+                android:id="@+id/common_setting_only_wifi_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_4"
+                android:src="@mipmap/ic_setting_checked"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

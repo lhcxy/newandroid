@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#b3000000"
+              android:orientation="vertical"
+    >
+
+    <com.yunbao.phonelive.custom.TextView2
+        android:id="@+id/kick"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="@string/tiRen"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        />
+
+    <com.yunbao.phonelive.custom.TextView2
+        android:id="@+id/btn_gap"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="@string/gap"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        />
+
+    <com.yunbao.phonelive.custom.TextView2
+        android:id="@+id/btn_set_admin"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        />
+
+    <com.yunbao.phonelive.custom.TextView2
+        android:id="@+id/btn_admin_list"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="@string/admin_list"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        />
+
+    <com.yunbao.phonelive.custom.TextView2
+        android:id="@+id/btn_close_live"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="@string/btn_close_live"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:visibility="gone"
+        />
+    <com.yunbao.phonelive.custom.TextView2
+        android:id="@+id/btn_forbid_account"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="@string/admin_forbid_account"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:visibility="gone"
+        />
+
+
+    <TextView
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <ImageView
+        android:id="@+id/btn_chat"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:adjustViewBounds="true"
+        android:onClick="liveClick"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_live_chat" />
+
+    <ImageView
+        android:id="@+id/live_beer_bucket_iv"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_toRightOf="@id/btn_chat"
+        android:adjustViewBounds="true"
+        android:onClick="liveAudienceClick"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_liver_beer_bucket" />
+
+    <ImageView
+        android:id="@+id/btn_free_gift"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_16"
+        android:adjustViewBounds="true"
+        android:onClick="liveAudienceClick"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_live_close"
+        android:visibility="gone" />
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/live_chat_hlb_rl"-->
+    <!--android:layout_width="@dimen/dp_36"-->
+    <!--android:layout_height="@dimen/dp_36"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginRight="@dimen/dp_16"-->
+    <!--android:onClick="liveAudienceClick">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/live_chat_hlb_iv"-->
+    <!--android:layout_width="@dimen/dp_32"-->
+    <!--android:layout_height="@dimen/dp_32"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:src="@mipmap/ic_live_free_gift_hlb" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/live_chat_hlb_num_tv"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:background="@drawable/bg_full_red_circle"-->
+    <!--android:paddingLeft="@dimen/dp_4"-->
+    <!--android:paddingTop="@dimen/dp_2"-->
+    <!--android:paddingRight="@dimen/dp_4"-->
+    <!--android:paddingBottom="@dimen/dp_2"-->
+    <!--android:text="0"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/sp_8"-->
+    <!--android:visibility="invisible" />-->
+    <!--</RelativeLayout>-->
+
+
+    <ImageView
+        android:id="@+id/btn_share"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_toLeftOf="@id/btn_egg_event"
+        android:adjustViewBounds="true"
+        android:onClick="liveAudienceClick"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_live_share" />
+
+    <ImageView
+        android:id="@+id/btn_egg_event"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:layout_alignBottom="@id/btn_share"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_4"
+        android:adjustViewBounds="true"
+        android:onClick="liveAudienceClick"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_live_egg_event_square" />
+
+    <ImageView
+        android:id="@+id/btn_msg"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_toLeftOf="@id/btn_share"
+        android:adjustViewBounds="true"
+        android:onClick="liveClick"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_live_msg"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/red_point"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:layout_alignRight="@id/btn_msg"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_chat_red_point"
+        android:gravity="center"
+        android:minWidth="14dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:textColor="#fff"
+        android:textSize="10sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/btn_gift"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:layout_centerInParent="true"
+        android:onClick="liveAudienceClick"
+        android:src="@mipmap/ic_live_watcher_gift" />
+
+</RelativeLayout>

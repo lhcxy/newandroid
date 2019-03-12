@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_16"
+    android:layout_marginRight="@dimen/dp_16"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_marginBottom="@dimen/dp_4">
+
+        <com.yunbao.phonelive.custom.UserLevelView
+            android:id="@+id/live_chat_level_ulv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/live_chat_content_tv"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginRight="@dimen/dp_4"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/live_chat_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/dp_4"
+            android:layout_toRightOf="@id/live_chat_level_ulv"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/sp_14"
+            tools:text="11111111111111" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/live_chat_icon_iv"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:layout_margin="@dimen/dp_4"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginRight="@dimen/dp_16"
+            android:src="@mipmap/ic_ui_home_logo" />
+
+        <LinearLayout
+            android:id="@+id/new_home_tl_search_iv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:layout_weight="1"
+            android:background="@drawable/bg_home_search"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_8"
+                android:src="@mipmap/ic_home_title_search" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="请输入您要搜索的昵称或ID"
+                android:textColor="#ffaaaaaa"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_msg_rl"
+            android:layout_width="@dimen/dp_36"
+            android:layout_height="@dimen/dp_36"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_8">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_ui_user_info_msg" />
+
+            <View
+                android:id="@+id/user_msg_unread_v"
+                android:layout_width="@dimen/dp_8"
+                android:layout_height="@dimen/dp_8"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_marginRight="@dimen/dp_8"
+                android:background="@drawable/bg_red_circle"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/classify_tab_title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:layout_below="@id/title_ll"
+        android:paddingBottom="@dimen/dp_2">
+
+        <!--<ImageView-->
+        <!--android:id="@+id/new_home_tl_edit_iv"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="@dimen/dp_8"-->
+        <!--android:padding="@dimen/dp_8"-->
+        <!--android:src="@mipmap/ic_home_title_add" />-->
+
+        <include
+            android:id="@+id/classify_tab_title"
+            layout="@layout/item_ui_classify_title_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_8" />
+
+        <!--<View-->
+        <!--android:id="@+id/classify_tab_title_line"-->
+        <!--android:layout_width="@dimen/dp_2"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginBottom="@dimen/dp_12"-->
+        <!--android:layout_marginLeft="@dimen/dp_8"-->
+        <!--android:layout_marginRight="@dimen/dp_4"-->
+        <!--android:layout_marginTop="@dimen/dp_12"-->
+        <!--android:layout_toRightOf="@id/classify_tab_title"-->
+        <!--android:background="@drawable/bg_red_circle" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/new_home_tl_search_iv"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="@dimen/dp_8"-->
+        <!--android:layout_marginRight="@dimen/dp_8"-->
+        <!--android:padding="@dimen/dp_8"-->
+        <!--android:src="@mipmap/ic_home_title_search" />-->
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/classify_tab_title_tabl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/classify_tab_title"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            app:tabIndicatorHeight="0dp" />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/classify_tab_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/classify_tab_title_rl" />
+
+</RelativeLayout>

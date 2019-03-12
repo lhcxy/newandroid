@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/headImg"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_16" />
+
+    <TextView
+        android:id="@+id/attention"
+        android:layout_width="60dp"
+        android:layout_height="26dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_16"
+        android:background="@drawable/bg_list_attention"
+        android:gravity="center"
+        android:textColor="@color/fg_list_2"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/is_live_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_toLeftOf="@id/attention"
+        android:text="直播中"
+        android:textColor="@color/text_color_f033"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_toLeftOf="@id/is_live_tv"
+        android:layout_toRightOf="@id/headImg"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/textColor"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunbao.phonelive.custom.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <FrameLayout
+        android:id="@+id/video_place"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/room_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_16"
+        android:textColor="@color/footLightGreyTextColor"
+        android:textSize="@dimen/sp_12" />
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:id="@+id/wrap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/repalced_game"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+
+            <RelativeLayout
+                android:id="@+id/inner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/repalced_game">
+
+                <LinearLayout
+                    android:id="@+id/zhubo_wrap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_live_zhubo"
+                    android:orientation="horizontal">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/anchor_avatar"
+                        android:layout_width="@dimen/dp_36"
+                        android:layout_height="@dimen/dp_36"
+                        android:onClick="liveClick"
+                        android:scaleType="centerCrop"
+                        app:riv_border_color="#B5B5B5"
+                        app:riv_border_width="2dp"
+                        app:riv_oval="true" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:layout_marginRight="@dimen/dp_16"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/live_name_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="sdjflkj"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/sp_12" />
+
+                        <TextView
+                            android:id="@+id/nums"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="sjdflkj"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/sp_10" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/btn_attention"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="-6dp"
+                        android:layout_marginRight="@dimen/dp_8"
+                        android:background="@drawable/bg_white_circle"
+                        android:drawableLeft="@mipmap/ic_live_focus"
+                        android:drawablePadding="@dimen/dp_4"
+                        android:gravity="center"
+                        android:onClick="liveAudienceClick"
+                        android:paddingLeft="@dimen/dp_8"
+                        android:paddingTop="@dimen/dp_6"
+                        android:paddingRight="@dimen/dp_16"
+                        android:paddingBottom="@dimen/dp_6"
+                        android:text="@string/attention2"
+                        android:textColor="@color/app_selected_color"
+                        android:textSize="@dimen/sp_12"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/room_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/zhubo_wrap"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/bg_live_votes"
+                    android:drawableRight="@mipmap/icon_live_right_arrow"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:gravity="center_vertical"
+                    android:onClick="liveClick"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:paddingTop="@dimen/dp_2"
+                    android:paddingRight="@dimen/dp_8"
+                    android:paddingBottom="@dimen/dp_2"
+                    android:text="贡献榜"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_12" />
+
+
+                <FrameLayout
+                    android:id="@+id/repalced_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/chat_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_above="@id/repalced_bottom"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:overScrollMode="never" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/enter_room_anim"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_above="@id/chat_list"-->
+                <!--android:layout_marginBottom="4dp"-->
+                <!--android:textColor="#fff"-->
+                <!--android:textSize="16sp"-->
+                <!--android:translationX="400dp" />-->
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/btn_close"
+                android:layout_width="@dimen/dp_36"
+                android:layout_height="@dimen/dp_36"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/dp_16"
+                android:src="@mipmap/icon_live_close" />
+        </RelativeLayout>
+
+        <com.yunbao.phonelive.custom.FrameAnimImageView
+            android:id="@+id/gift_frame_anim"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <com.yunbao.phonelive.custom.FrameAnimImageView
+            android:id="@+id/enter_room_frame_anim_1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="80dp" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/enter_room_frame_anim_2"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignTop="@id/enter_room_frame_anim_1"
+            android:scaleType="centerCrop" />
+
+
+        <TextView
+            android:id="@+id/enter_room_frame_words"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enter_room_frame_anim_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/global"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/live_beer_thank_hb_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dp_16"
+            android:drawableTop="@mipmap/ic_live_beer_thank"
+            android:drawablePadding="@dimen/dp_8"
+            android:shadowColor="#99000000"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="2"
+            android:text="答谢红包"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</com.yunbao.phonelive.custom.DragLayout>

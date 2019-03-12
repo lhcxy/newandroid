@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="224dp"
+    android:layout_height="288dp">
+
+
+    <RelativeLayout
+        android:id="@+id/dialog_rp_root_rl"
+        android:layout_width="224dp"
+        android:layout_height="288dp"
+        android:background="@mipmap/bg_red_paper_random"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/dialog_upopen_rp_title_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_rp_random_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_48"
+            android:shadowColor="#66000000"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="3.0"
+            android:text="主播发红包啦"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/sp_22" />
+
+        <ImageView
+            android:id="@+id/dialog_rp_unopen_coin_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="160dp"
+            android:src="@mipmap/ic_dialog_rp_coin" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dialog_rp_root_second_rl"
+        android:layout_width="224dp"
+        android:layout_height="288dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/dialog_rp_open_title_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bg_dialog_random_rp_title">
+
+            <TextView
+                android:id="@+id/rp_open_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_36"
+                android:text="恭喜你获得"
+                android:textColor="#fffff85d"
+                android:textSize="@dimen/sp_22" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rp_open_title_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_24"
+                android:layout_marginRight="@dimen/dp_24"
+                android:background="#fffff5d9"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dialog_rp_get_coin_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:textColor="#ffe1310f"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:layout_marginBottom="@dimen/dp_48"
+                    android:text="探球币已自动存入账户余额"
+                    android:textColor="#fff2674e"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/dialog_rp_open_title_rl"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:src="@mipmap/ic_dialog_rp_open_coin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/ic_dialog_rp_bottom"
+            android:orientation="vertical">
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2" />
+
+            <TextView
+                android:id="@+id/dialog_rp_confirm_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dp_36"
+                android:layout_marginRight="@dimen/dp_36"
+                android:background="@drawable/bg_dialog_rp_confirm_"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_8"
+                android:paddingBottom="@dimen/dp_8"
+                android:text="确定"
+                android:textColor="#ffe1310f"
+                android:textSize="@dimen/sp_14" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/dialog_cancel_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/dp_8"
+        android:src="@mipmap/ic_dialog_rp_close" />
+</RelativeLayout>

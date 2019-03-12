@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ad000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16">
+
+            <ImageView
+                android:id="@+id/prelive_close_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingTop="@dimen/dp_8"
+                android:paddingRight="@dimen/dp_8"
+                android:paddingBottom="@dimen/dp_8"
+                android:src="@mipmap/ic_back_white" />
+
+            <ImageView
+                android:id="@+id/prelive_setting_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dp_8"
+                android:src="@mipmap/ic_ui_live_setting" />
+
+            <ImageView
+                android:id="@+id/prelive_camera_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/prelive_setting_iv"
+                android:padding="@dimen/dp_8"
+                android:src="@mipmap/ic_live_camera_switch" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/prelive_avatar_iv"
+            android:layout_width="@dimen/dp_72"
+            android:layout_height="@dimen/dp_72"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_16"
+            android:src="@mipmap/icon_filter_liangli" />
+
+        <TextView
+            android:id="@+id/prelive_uname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_8"
+            android:maxLines="1"
+            android:shadowColor="#E6E6E6"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:textColor="@color/textWhite_ee"
+            android:textSize="@dimen/sp_12"
+            tools:text="skdjflj" />
+
+        <RelativeLayout
+            android:id="@+id/prelive_title_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16">
+
+            <ImageView
+                android:id="@+id/prelive_clear_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dp_8"
+                android:src="@drawable/ic_clear_white_24dp" />
+
+            <EditText
+                android:id="@+id/prelive_title_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/dp_48"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginRight="@dimen/dp_48"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="好的标题能够吸引更多的用户"
+                android:maxLength="24"
+                android:singleLine="true"
+                android:textColor="@color/text_color_99"
+                android:textColorHint="@color/text_color_66"
+                android:textSize="@dimen/sp_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/prelive_title_et"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:background="@color/background" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@color/black"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_8">
+
+            <ImageView
+                android:id="@+id/live_type_add_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dp_8"
+                android:src="@mipmap/ic_home_title_add" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/live_type_tl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_8"
+                android:layout_toStartOf="@id/live_type_add_tv"
+                android:layout_toLeftOf="@id/live_type_add_tv"
+                app:tabIndicatorHeight="0dp"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/app_selected_color"
+                app:tabTextAppearance="@style/LiveStyleTlStyle"
+                app:tabTextColor="@color/white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@color/black"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_8">
+
+            <ImageView
+                android:id="@+id/live_type_channel_add_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dp_8"
+                android:src="@mipmap/ic_home_title_add" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/live_type_channel_tl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_8"
+                android:layout_toStartOf="@id/live_type_channel_add_tv"
+                android:layout_toLeftOf="@id/live_type_channel_add_tv"
+                app:tabIndicatorHeight="0dp"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/app_selected_color"
+                app:tabTextAppearance="@style/LiveStyleTlStyle"
+                app:tabTextColor="@color/white" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/live_type_hint_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/global"
+            android:textSize="@dimen/sp_12" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_64"
+            android:background="#11000000"
+            android:padding="@dimen/dp_8"
+            android:shadowColor="#44000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="@string/live_share_to"
+            android:textColor="#fff"
+            android:textSize="@dimen/sp_12" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/prelive_share_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:overScrollMode="never" />
+
+
+        <LinearLayout
+            android:id="@+id/live_bottom_ll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:background="@color/footNotTextColor"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/live_start_horizontal_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@mipmap/ic_ui_live_start_horizontal"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:gravity="center"
+                    android:text="横屏直播 "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/live_start_vertical_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@mipmap/ic_ui_start_live_vertical"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:gravity="center"
+                    android:text="竖屏直播"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

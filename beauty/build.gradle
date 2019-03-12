@@ -1,0 +1,32 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion COMPILE_SDK_VERSION as int
+//    buildToolsVersion BUILD_TOOLS_VERSION
+
+    defaultConfig {
+        minSdkVersion MIN_SDK_VERSION  as int//16
+        targetSdkVersion TARGET_SDK_VERSION as int
+        versionCode 1
+        versionName '1.0'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    flatDir {
+        dirs '/libs','../libs'
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api "com.android.support:appcompat-v7:$supportVersion"
+    api "com.android.support:recyclerview-v7:$supportVersion"
+    api 'com.google.code.gson:gson:2.8.5'//萌颜sdk内部解析json用
+    api(name: 'ti-sdk', ext: 'aar')
+}

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_grey_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/live_report_back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_8"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="举报房间"
+            android:textColor="@color/mainBodyTextColor"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/live_report_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/subBodyTextColor"
+            android:padding="@dimen/dp_8"
+            android:text="提交"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/report_reason_room_id_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:background="@color/white"
+        android:padding="@dimen/dp_8"
+        android:text="房间Id"
+        android:textColor="@color/footNotTextColor"
+        android:textSize="@dimen/sp_14" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/report_reason_content_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="left|top"
+            android:hint="请输入举报内容"
+            android:maxLength="200"
+            android:minHeight="120dp"
+            android:padding="@dimen/dp_16"
+            android:textColor="@color/footNotTextColor"
+            android:textColorHint="@color/footNotHintTextColor"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/report_reason_content_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:text="@string/txt_report_content_count"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/report_reason_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:text="举报原因"
+            android:textColor="@color/mainBodyTextColor"
+            android:textSize="@dimen/sp_14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/report_reason_title"
+            android:background="@color/lineColor" />
+
+        <RadioGroup
+            android:id="@+id/report_reason_rg_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/report_reason_title"
+            android:layout_margin="@dimen/dp_8"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/report_reason_eroticism_rb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_bg_report_type"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_4"
+                android:paddingBottom="@dimen/dp_4"
+                android:text="色情低俗"
+                android:textColor="@drawable/selector_tc_report_type"
+                android:textSize="@dimen/sp_14" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="16dp"
+                android:layout_height="1dp" />
+
+            <RadioButton
+                android:id="@+id/report_reason_violence_rb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_bg_report_type"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_4"
+                android:paddingBottom="@dimen/dp_4"
+                android:text="政治暴力"
+                android:textColor="@drawable/selector_tc_report_type"
+                android:textSize="@dimen/sp_14" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="16dp"
+                android:layout_height="1dp" />
+
+            <RadioButton
+                android:id="@+id/report_reason_gamble_rb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_bg_report_type"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_4"
+                android:paddingBottom="@dimen/dp_4"
+                android:text="赌博"
+                android:textColor="@drawable/selector_tc_report_type"
+                android:textSize="@dimen/sp_14" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/report_reason_rg_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/report_reason_rg_one"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/report_reason_other_rb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_bg_report_type"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_4"
+                android:paddingBottom="@dimen/dp_4"
+                android:text="其他"
+                android:textColor="@drawable/selector_tc_report_type"
+                android:textSize="@dimen/sp_14" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="32dp"
+                android:layout_height="1dp" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="2" />
+        </RadioGroup>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/report_pic_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/report_pic_iv"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
+            android:layout_margin="@dimen/dp_8"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_toRightOf="@id/report_pic_iv"
+            android:text="上传一张截图"
+            android:textColor="@color/footNotHintTextColor"
+            android:textSize="@dimen/sp_12" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/report_nickname_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:background="@color/white"
+        android:padding="@dimen/dp_8"
+        android:text="昵称:"
+        android:textColor="@color/footNotTextColor"
+        android:textSize="@dimen/sp_14" />
+
+    <EditText
+        android:id="@+id/report_qq_num_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:background="@color/white"
+        android:digits="0123456789"
+        android:hint="留下QQ号,方便与我们联系"
+        android:inputType="number"
+        android:maxLength="20"
+        android:padding="@dimen/dp_8"
+        android:singleLine="true"
+        android:textColor="@color/mainBodyTextColor"
+        android:textColorHint="@color/footNotTextColor"
+        android:textSize="@dimen/sp_12" />
+</LinearLayout>

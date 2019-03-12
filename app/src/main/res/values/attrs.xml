@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DrawableTextView">
+        <attr name="drawableSize" format="dimension" />
+        <attr name="top_drawableSize" format="dimension" />
+        <attr name="left_drawableSize" format="dimension" />
+        <attr name="right_drawableSize" format="dimension" />
+        <attr name="bottom_drawableSize" format="dimension" />
+        <attr name="top_drawable" format="reference" />
+        <attr name="left_drawable" format="reference" />
+        <attr name="right_drawable" format="reference" />
+        <attr name="bottom_drawable" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="title_textSize" format="dimension" />
+        <attr name="indicatorWidth" format="dimension" />
+        <attr name="indicatorHeight" format="dimension" />
+        <attr name="normalColor" format="color" />
+        <attr name="lightColor" format="color" />
+        <attr name="currentItem" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="LeftDrawableTextView">
+        <attr name="drawableWidth" format="dimension" />
+        <attr name="drawableHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="LrcTextView">
+        <attr name="progress" format="float" />
+        <attr name="progressColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CheckedImageView">
+        <attr name="checked" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RefreshLayout">
+        <attr name="loadMoreEnable" format="boolean" />
+        <attr name="loadStyle" format="enum">
+            <enum name="black" value="0" />
+            <enum name="white" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="PokerView">
+        <attr name="coverSrc" format="reference" />
+        <attr name="count" format="integer" />
+        <attr name="arrow" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="rate" format="float" />
+        <attr name="hasTriangle" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="GameBetCoinView">
+        <attr name="name" format="string" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="marginTop1" format="dimension" />
+        <attr name="marginTop2" format="dimension" />
+        <attr name="marginTop3" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="PanRootView">
+        <attr name="deltaHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="androidWheelView">
+        <attr name="awv_textsize" format="integer" />
+        <attr name="awv_lineSpace" format="float" />
+        <attr name="awv_centerTextColor" format="integer" />
+        <attr name="awv_outerTextColor" format="integer" />
+        <attr name="awv_dividerTextColor" format="integer" />
+        <attr name="awv_itemsVisibleCount" format="integer" />
+        <attr name="awv_isLoop" format="boolean" />
+        <attr name="awv_initialPosition" format="integer" />
+        <attr name="awv_scaleX" format="float" />
+    </declare-styleable>
+
+    <!--<declare-styleable name="ArcMenu">-->
+    <!--<attr name="menu_scr" format="reference"/>-->
+    <!--<attr name="menu_color" format="reference|color"/>-->
+    <!--<attr name="menu_ripple_color" format="color"/>-->
+    <!--<attr name="menu_radius" format="dimension"/>-->
+    <!--<attr name="menu_margin" format="dimension"/>-->
+    <!--<attr name="menu_open" format="enum">-->
+    <!--<enum name="arc_left" value="0"/>-->
+    <!--<enum name="arc_right" value="1"/>-->
+    <!--<enum name="arc_top_left" value="2"/>-->
+    <!--<enum name="arc_top_right" value="3"/>-->
+    <!--</attr>-->
+    <!--<attr name="menu_animation_time" format="integer"/>-->
+    <!--<attr name="menu_elevation" format="dimension"/>-->
+    <!--</declare-styleable>-->
+    <!-- 位置属性-->
+    <attr name="position">
+        <enum name="left_top" value="0" />
+        <enum name="left_bottom" value="1" />
+        <enum name="right_top" value="2" />
+        <enum name="right_bottom" value="3" />
+    </attr>
+
+    <!-- 尺寸属性dp如果使用px可能会造成屏幕适配问题-->
+    <attr name="radius" format="dimension" />
+    <!-- 自定义属性-->
+    <declare-styleable name="ArcMenu">
+        <attr name="position" />
+        <attr name="radius" />
+    </declare-styleable>
+</resources>

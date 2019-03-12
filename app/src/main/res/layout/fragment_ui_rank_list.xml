@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rank_list_title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="榜单"
+            android:textColor="@color/textColor"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/rank_list_title_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_8"
+            android:src="@mipmap/ic_home_title_search" />
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rank_list_title_rl">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/rank_list_banner"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:delay_time="3000"
+                app:image_scale_type="fit_xy"
+                app:indicator_drawable_selected="@drawable/bg_home_indicator_selected"
+                app:indicator_drawable_unselected="@drawable/bg_home_indicator_unselected"
+                app:indicator_height="@dimen/dp_4"
+                app:indicator_margin="@dimen/dp_6"
+                app:indicator_width="@dimen/dp_16" />
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/dp_4"-->
+            <!--android:background="@color/lineColor" />-->
+
+            <RelativeLayout
+                android:id="@+id/ranklist_star_more_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/main_home_title_hot_onwer_v"
+                    android:layout_width="3dp"
+                    android:layout_height="14dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:background="@drawable/bg_circle_ff6490" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:layout_toRightOf="@id/main_home_title_hot_onwer_v"
+                    android:text="明星主播榜"
+                    android:textColor="@color/mainBodyTextColor"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/ranklist_star_more_tv"
+                    style="@style/titleMoreTvStyle" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:background="@color/lineColor" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rank_star_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+            <RelativeLayout
+                android:id="@+id/ranklist_popularity_more_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/main_popularity_onwer_v"
+                    android:layout_width="3dp"
+                    android:layout_height="14dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:background="@drawable/bg_circle_ff6490" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:layout_toRightOf="@id/main_popularity_onwer_v"
+                    android:text="人气主播榜"
+                    android:textColor="@color/mainBodyTextColor"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/ranklist_popularity_more_tv"
+                    style="@style/titleMoreTvStyle" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:background="@color/lineColor" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rank_popularity_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+            <RelativeLayout
+                android:id="@+id/ranklist_rich_more_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/main_ranklist_rich_v"
+                    android:layout_width="3dp"
+                    android:layout_height="14dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:background="@drawable/bg_circle_ff6490" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:layout_toRightOf="@id/main_ranklist_rich_v"
+                    android:text="富豪实力榜"
+                    android:textColor="@color/mainBodyTextColor"
+                    android:textSize="@dimen/sp_16" />
+
+
+                <TextView
+                    android:id="@+id/ranklist_rich_more_tv"
+                    style="@style/titleMoreTvStyle" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:background="@color/lineColor" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rank_rich_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+            <RelativeLayout
+                android:id="@+id/ranklist_game_more_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/main_ranklist_game_v"
+                    android:layout_width="3dp"
+                    android:layout_height="14dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:background="@drawable/bg_circle_ff6490" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:layout_toRightOf="@id/main_ranklist_game_v"
+                    android:text="游戏达人榜"
+                    android:textColor="@color/mainBodyTextColor"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/ranklist_game_more_tv"
+                    style="@style/titleMoreTvStyle" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:background="@color/lineColor" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rank_niuniu_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+            <RelativeLayout
+                android:id="@+id/ranklist_niuniu_more_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/main_ranklist_niuniu_v"
+                    android:layout_width="3dp"
+                    android:layout_height="14dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:background="@drawable/bg_circle_ff6490" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:layout_toRightOf="@id/main_ranklist_niuniu_v"
+                    android:text="牛牛排行榜"
+                    android:textColor="@color/mainBodyTextColor"
+                    android:textSize="@dimen/sp_16" />
+
+
+                <TextView
+                    android:id="@+id/ranklist_niuniu_more_tv"
+                    style="@style/titleMoreTvStyle" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:background="@color/lineColor" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rank_game_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/rank_list_empty_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rank_list_title_rl"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_40"
+            android:src="@mipmap/no_zhubo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_16"
+            android:text="暂无榜单信息"
+            android:textColor="@color/footNotTextColor"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+</RelativeLayout>

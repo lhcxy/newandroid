@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_48"
+            android:layout_marginRight="@dimen/dp_16"
+            android:background="@drawable/bg_list"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/anchor_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_48"
+                android:textColor="@color/mainBodyTextColor"
+                android:textSize="@dimen/sp_16" />
+
+
+            <TextView
+                android:id="@+id/anchor_id_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="直播id"
+                android:textColor="@color/footNotHintTextColor"
+                android:textSize="@dimen/sp_10" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_16"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/anchor_moods_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="0"
+                        android:textColor="@color/footNotTextColor"
+                        android:textSize="@dimen/sp_14"
+                        tools:text="11" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:text="热度"
+                        android:textColor="@color/footNotHintTextColor"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_24"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:layout_marginRight="@dimen/dp_24"
+                    android:layout_marginBottom="@dimen/dp_8"
+                    android:background="@color/footNotHintTextColor" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/anchor_fans_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/footNotTextColor"
+                        android:textSize="@dimen/sp_14"
+                        tools:text="11" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:text="关注"
+                        android:textColor="@color/footNotHintTextColor"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/anchor_type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:textColor="@color/footNotHintTextColor"
+                android:textSize="@dimen/sp_14"
+                tools:text="界面类型" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="主播公告"
+                android:textColor="@color/subBodyTextColor"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/anchor_notice_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dp_48"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_marginRight="@dimen/dp_48"
+                android:layout_marginBottom="@dimen/dp_24"
+                android:textColor="@color/footNotTextColor"
+                android:textSize="13sp"
+                tools:text="主播公告内容" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/anchor_avatar_iv"
+            android:layout_width="@dimen/dp_64"
+            android:layout_height="@dimen/dp_64"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_16" />
+
+
+        <android.support.v4.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_alignBottom="@id/anchor_avatar_iv"
+            android:id="@+id/avatar_line_space"
+            android:layout_height="@dimen/dp_8" />
+
+        <com.yunbao.phonelive.custom.UserLevelView
+            android:id="@+id/user_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/avatar_line_space"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/live_msg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_48"
+            android:layout_marginRight="@dimen/dp_24"
+            android:padding="@dimen/dp_8"
+            android:text="聊天"
+            android:textColor="#ff555555"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+</ScrollView>
